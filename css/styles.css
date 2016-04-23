@@ -1,4 +1,6 @@
-
+html, body {
+  overflow: auto;
+}
 
 
 #splash-photo {

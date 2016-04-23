@@ -8,7 +8,7 @@ $(document).ready(() => {
   // ui sticky element context to body
   $('.ui.sticky')
   .sticky({
-    context: 'body'
+    
   });
 
 
