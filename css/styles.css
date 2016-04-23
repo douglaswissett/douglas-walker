@@ -6,3 +6,20 @@
   width: 100%;
   height: 100%;
 }
+
+#navbar {
+  height: 50px;
+  background-color: rgba(188,143,143,0.5);
+}
+
+#middle-photo {
+  border: 2px solid lime;
+  width: 100%;
+  height: 100%;
+}
+
+#middle-photo-2 {
+  border: 2px solid orange;
+  width: 100%;
+  height: 100%;
+}

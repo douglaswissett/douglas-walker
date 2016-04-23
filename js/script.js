@@ -4,6 +4,13 @@
 */
 
 $(document).ready(() => {
-  console.log('js loaded on page');
+
+  // ui sticky element context to body
+  $('.ui.sticky')
+  .sticky({
+    context: 'body'
+  });
+
+
 
 })
