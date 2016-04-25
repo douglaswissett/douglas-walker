@@ -1,0 +1,86 @@
+html, body {
+  overflow: auto;
+}
+
+
+
+
+/* Navigation */
+#navbar {
+  height: 60px;
+  background-color: white;
+  box-shadow: 0 0 19px 1px black;
+}
+
+.nav.column {
+  margin-top: 10px;
+}
+
+#logo {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
+
+/* Main header banner */
+#splash-photo {
+  border: 2px solid orange;
+  width: 100%;
+  height: 100%;
+}
+
+/* Page dividing photos */
+#middle-photo {
+  border: 2px solid orange;
+  width: 100%;
+  height: 100%;
+}
+
+#middle-photo-2 {
+  border: 2px solid orange;
+  width: 100%;
+  height: 100%;
+}
+
+#middle-photo-3 {
+  border: 2px solid orange;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* Intro styles */
+.text.container.intro {
+  height: 100%;
+}
+
+/* Work styles */
+.ui.container.work {
+  height: 100%;
+}
+
+/* About styles */
+.text.container.about {
+  height: 100%;
+}
+
+/* Contact styles */
+.text.container.contact {
+  height: 100%;
+}
+
+
+
+
+
+
+/* Footer styles */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background-color: darkgrey;
+}
