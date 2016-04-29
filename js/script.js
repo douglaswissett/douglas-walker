@@ -4,9 +4,7 @@
 */
 
 $(document).ready(() => {
-
-  // ui sticky element
-  $('.ui.sticky').sticky();
+  console.log('js loaded');
 
 
 
