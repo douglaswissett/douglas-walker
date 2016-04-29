@@ -8,6 +8,14 @@ html, body {
   height: 100%;
 }
 
+img {
+  width: 100%;
+}
+
+#profile {
+  width: 50%;
+  border-radius: 100%;
+}
 
 .center {
   text-align: center;
@@ -41,6 +49,7 @@ nav {
 }
 .nav-list {
   text-align: center;
+  margin-top: 20px;
 }
 .nav-list li {
   display: inline-block;
@@ -81,11 +90,9 @@ h3 {
   top: 50%;
 }
 
-.section-image img {
-  width: 200px;
-  height: 200px;
+.divider {
+  padding-bottom: 50px;
 }
-
 
 
 footer {
