@@ -9,6 +9,10 @@ html, body {
 }
 
 
+.center {
+  text-align: center;
+}
+
 #logo {
   margin: 0;
   text-align: center;
@@ -60,12 +64,6 @@ section {
   padding: 40px 0 60px;
 }
 
-article {
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 p {
   padding: 20px;
 }
@@ -84,13 +82,19 @@ h3 {
 }
 
 .section-image img {
-  width: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 
 
+footer {
+  margin-top: 60px;
+}
+
 .footer-list {
   text-align: center;
+  margin-top: 10px;
 }
 .footer-list li {
   display: inline-block;
