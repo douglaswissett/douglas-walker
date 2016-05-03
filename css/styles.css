@@ -14,19 +14,7 @@ img {
   width: 100%;
 }
 
-#profile {
-  width: 50%;
-  border-radius: 100%;
-}
 
-.center {
-  text-align: center;
-}
-
-#logo {
-  margin: 0;
-  text-align: center;
-}
 
 
 
@@ -40,7 +28,10 @@ img {
   height: 100%;
 }
 
-
+#profile {
+  width: 25%;
+  border-radius: 100%;
+}
 
 
 /*
@@ -63,7 +54,19 @@ h3 {
   padding: 20px;
 }
 
-
+.center {
+  text-align: center;
+}
+.big {
+  display: inline;
+  font-size: 2.4em;
+  letter-spacing: -4px;
+}
+.pStyle {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
 
 
 /*
@@ -117,11 +120,7 @@ footer {
 
 
 
-.big {
-  display: inline;
-  font-size: 2.4em;
-  letter-spacing: -4px;
-}
+
 
 
 /* 
@@ -150,12 +149,10 @@ nav {
   font-size: 1.4em;
   padding: 0 24px;
 }
-
-
-
-
-
-
+#logo {
+  margin: 0;
+  text-align: center;
+}
 
 
 
