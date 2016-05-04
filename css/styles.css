@@ -6,7 +6,9 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+
   font-family: 'Ubuntu', sans-serif;
+
   background-color: #F5F5F5;
 }
 
@@ -50,6 +52,8 @@ section {
 
 p {
   padding: 20px;
+
+  font-family: 'Times';
 }
 
 h3 {
@@ -90,6 +94,22 @@ h3 {
   font-size: 40px;
   letter-spacing: 4px;
 }
+
+
+
+
+
+
+
+.messageBox {
+  width: 350px;
+  height: 100px;
+}
+
+
+
+
+
 
 
 
@@ -169,19 +189,19 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    -webkit-transition: .7s
-    -o-transition: .7s
-    -moz-transition: .7s
-    -ms-transition: .7s
-    transition: transform .7s ease-in-out;
+    -webkit-transition: 1s
+    -o-transition: 1s
+    -moz-transition: 1s
+    -ms-transition: 1s
+    transition: transform 1s ease-in-out;
 }
 .headroom--unpinned {
     top: -120px;
-  -webkit-transition: .7s;
-  -o-transition: .7s;
-  -moz-transition: .7s;
-  -ms-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  transition: 1s;
   -webkit-transform: translateY(-120px);
   -o-transform: translateY(-120px);
   -moz-transform: translateY(-120px);
@@ -191,9 +211,9 @@ nav {
 
 .headroom--pinned {
    top: 0;
-  -webkit-transition: .7s;
-  -o-transition: .7s;
-  -moz-transition: .7s;
-  -ms-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  transition: 1s;
 }

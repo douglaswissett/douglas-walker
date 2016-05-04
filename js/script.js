@@ -17,29 +17,29 @@ $(document).ready(() => {
 
 
   // Header navigation link slow scroll animate on page
-  $('#aboutNav').click((e) => {
+  $('.aboutNav').click((e) => {
     e.preventDefault();
 
-    $('html, body').animate({scrollTop:610}, 1000);
+    $('html, body').animate({scrollTop: $('#profile').offset().top }, 1500);
   });
 
-  $('#workNav').click((e) => {
+  $('.workNav').click((e) => {
     e.preventDefault();
 
-    $('html, body').animate({scrollTop:1900}, 1000);
+    $('html, body').animate({scrollTop: $('#work').offset().top - 120}, 1500);
   });
 
-  $('#contactNav').click((e) => {
+  $('.contactNav').click((e) => {
     e.preventDefault();
 
-    $('html, body').animate({scrollTop:3000}, 1000);
+    $('html, body').animate({scrollTop: $('#contact').offset().top - 120}, 1500);
   });
 
   // Paragraph contact here link slow scroll to page
   $('#contactHere').click((e) => {
     e.preventDefault();
 
-    $('html, body').animate({scrollTop:3000}, 1000);
+    $('html, body').animate({scrollTop: $('#contactForm').offset().top - 120}, 1500);
   });
 
 

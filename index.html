@@ -30,9 +30,9 @@
         <div class="col-md-5 col-md-offset-3">
 
           <ul class="nav-list">
-            <li><a href="" id="aboutNav">About</a></li>
-            <li><a href="" id="workNav">Work</a></li>
-            <li><a href="" id="contactNav">Contact</a></li>
+            <li><a href="" class="aboutNav">About</a></li>
+            <li><a href="" class="workNav">Work</a></li>
+            <li><a href="" class="contactNav">Contact</a></li>
           </ul>
 
         </div>
@@ -81,7 +81,7 @@
     </div>
 
 
-    <header>
+    <header id="work">
       <h1>What I can do</h1>
     </header>
 
@@ -129,7 +129,7 @@
     </div>
 
 
-    <header>
+    <header id="contact">
       <h1>How I can help</h1>
     </header>
 
@@ -142,13 +142,13 @@
 
           <p class="pStyle">If you have a project that you want to get started, think you need my help with something, then get in touch.</p>
 
-          <form action="MAILTO:douglas.wissett@gmail.com" method="post" enctype="text/plain">
+          <form id="contactForm" action="MAILTO:douglas.wissett@gmail.com" method="post" enctype="text/plain">
             <h4>Email me!</h4>
-            <input type="text" name="name" placeholder="your name"><br>
+            <input class="center" type="text" name="name" placeholder="your name" style="width: 200px;"><br>
             <br/>
-            <input type="text" name="mail" placeholder="your email"><br>
+            <input class="center" type="text" name="mail" placeholder="your email" style="width: 200px;"><br>
             <br/>
-            <input type="text" name="comment" placeholder="your message" size="50"><br><br>
+            <textarea class="messageBox" name="message" placeholder="Your message"></textarea><br/><br/>
             <input type="submit" value="Send">
             <input type="reset" value="Reset">
           </form>
@@ -179,11 +179,11 @@
         <div class="col-md-12">
 
           <ul class="footer-list">
-            <li><a href="">About</a></li>
-            <li><a href="">Work</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Github</a></li>
-            <li><a href="">LinkedIn</a></li>
+            <li><a href="" class="aboutNav">About</a></li>
+            <li><a href="" class="workNav">Work</a></li>
+            <li><a href="" class="contactNav">Contact</a></li>
+            <li><a href="https://github.com/douglaswissett" target="_blank">Github</a></li>
+            <li><a href="https://uk.linkedin.com/in/douglaswissett" target="_blank">LinkedIn</a></li>
           </ul>
 
         </div>
