@@ -16,7 +16,7 @@ $(document).ready(() => {
 
 
 
-  // Header navigation link slow scroll animate on page
+  // Navigation anchor links slow scroll animate on page
   $('.aboutNav').click((e) => {
     e.preventDefault();
 
@@ -35,7 +35,6 @@ $(document).ready(() => {
     $('html, body').animate({scrollTop: $('#contact').offset().top - 120}, 1500);
   });
 
-  // Paragraph contact here link slow scroll to page
   $('#contactHere').click((e) => {
     e.preventDefault();
 

@@ -18,7 +18,7 @@
 
 
 
-
+<!-- Navigation bar -->
   <header id="header" class="headroom">
     <nav>
       <div class="row nav">
@@ -40,23 +40,34 @@
     </nav>
   </header>
 
-  <div class="masthead">
-    
-  </div>
+
+
+
+
+<!-- Page masthead image -->
+  <div class="masthead"></div>
 
 
 
 
 
-
+<!-- Site body container -->
   <div class="container">
 
+
+
+
+  <!-- Profile circular image -->
     <div class="row">
       <div class="col-md-6 col-md-offset-3" style="text-align: center;">
         <img id="profile" src="./img/profile.jpg" alt="">
       </div>
     </div>
 
+
+
+
+  <!-- About me section -->
     <div class="row">
       <section class="col-md-8 col-md-offset-2">
 
@@ -72,6 +83,10 @@
     </div>
 
 
+
+
+
+  <!-- Section divider -->
     <div class="row">
       <div class="col-md-12">
         <header class="divider">
@@ -81,6 +96,9 @@
     </div>
 
 
+
+
+  <!-- Work section -->
     <header id="work">
       <h1>What I can do</h1>
     </header>
@@ -119,7 +137,10 @@
       </section>
     </div>
 
+  
 
+
+  <!-- Section divider -->
     <div class="row">
       <div class="col-md-12">
         <header class="divider">
@@ -129,6 +150,10 @@
     </div>
 
 
+
+
+
+  <!-- Contact section -->
     <header id="contact">
       <h1>How I can help</h1>
     </header>
@@ -142,21 +167,36 @@
 
           <p class="pStyle">If you have a project that you want to get started, think you need my help with something, then get in touch.</p>
 
-          <form id="contactForm" action="MAILTO:douglas.wissett@gmail.com" method="post" enctype="text/plain">
-            <h4>Email me!</h4>
-            <input class="center" type="text" name="name" placeholder="your name" style="width: 200px;"><br>
-            <br/>
-            <input class="center" type="text" name="mail" placeholder="your email" style="width: 200px;"><br>
-            <br/>
-            <textarea class="messageBox" name="message" placeholder="Your message"></textarea><br/><br/>
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
+          <form id="contactForm" action="mailto:douglas.wissett@gmail.com" method="GET">
+              <h4>Email me!</h4>
+              <input class="subjectBox" name="subject" type="text" placeholder="Subject" /><br/><br/>
+              <textarea class="messageBox" name="body" placeholder="Message"></textarea><br/><br/>
+              <input type="submit" value="Send" />
           </form>
 
-          <div>
-            <h5>Facebook</h5>
-            <h5>Instagram</h5>
-            <h5>Twitter</h5>
+
+        <!-- Social links -->
+          <div class="socials">
+
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/douglaswissettwalker" target="_blank"><img src="./img/facebook.png" alt=""></a>
+                <a href="https://www.facebook.com/douglaswissettwalker" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/douglaswissett" target="_blank"><img src="./img/twitter.png" alt=""></a>
+                <a href="https://twitter.com/douglaswissett" target="_blank">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/douglaswissett/" target="_blank"><img src="./img/insta.png" alt=""></a>
+                <a href="https://www.instagram.com/douglaswissett/" target="_blank">Instagram</a>
+              </li>
+              <li>
+                <a href="tel:+491771433039"><img src="./img/phone.png" alt=""></a>
+                <a href="tel:+491771433039">+491771433039</a>
+              </li>
+            </ul>
+
           </div>
       </section>
     </div>
@@ -168,10 +208,7 @@
 
 
 
-
-
-
-
+<!-- Site footer -->
   <footer>
     <div class="container">
 
@@ -204,11 +241,8 @@
 
 
 
-
-
-
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Headroom.js script for navigation bar animation -->
+  <!-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
   <script type="text/javascript" src="js/headroom.js"></script>
 </body>
 </html>

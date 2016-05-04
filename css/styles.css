@@ -99,8 +99,12 @@ h3 {
 
 
 
-
-
+/*
+  Email form input styles
+*/
+.subjectBox {
+  width: 350px;
+}
 .messageBox {
   width: 350px;
   height: 100px;
@@ -110,6 +114,22 @@ h3 {
 
 
 
+/*
+  Social icon link styles
+*/
+.socials li {
+  list-style: none;
+  text-align: left;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+}
 
 
 
@@ -117,7 +137,6 @@ h3 {
 /*
   Footer styles
 */
-
 footer {
   margin-top: 60px;
 }
