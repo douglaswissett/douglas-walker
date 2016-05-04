@@ -6,7 +6,10 @@
 $(document).ready(() => {
   console.log('js loaded');
 
-  
+
+
+
+  /* Headroom.js code */
   // grab an element
   var myElement = document.querySelector("#header");
   // construct an instance of Headroom, passing the element
@@ -16,6 +19,8 @@ $(document).ready(() => {
 
 
 
+
+  
   // Navigation anchor links slow scroll animate on page
   $('.aboutNav').click((e) => {
     e.preventDefault();
