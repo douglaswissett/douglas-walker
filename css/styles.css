@@ -108,7 +108,10 @@ h3 {
   width: 350px;
   height: 100px;
 }
-
+.formBtn {
+  width: 100px;
+  margin-bottom: 20px;
+}
 
 
 
