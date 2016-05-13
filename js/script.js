@@ -20,6 +20,7 @@ $(document).ready(() => {
 
 
 
+
   
   // Navigation anchor links slow scroll animate on page
   $('.aboutNav').click((e) => {
