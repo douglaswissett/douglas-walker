@@ -1,5 +1,5 @@
 * {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 html, body {
@@ -38,8 +38,36 @@ img {
 
 
 /*
+  About Section Styles
+*/
+.about-p {
+  width: 80%;
+  margin: 0 auto;
+}
+.about-intro {
+  margin-bottom: 21px;
+}
+
+
+/*
   Section styles
 */
+
+.container {
+  margin-top: 80px;  
+}
+
+#work {
+  margin-bottom: 40px;
+}
+
+.work-section {
+  padding: 0;
+}
+
+.web-design {
+  padding-left: 20px;
+}
 
 header {
   text-align: center;
@@ -50,8 +78,6 @@ section {
 }
 
 p {
-  padding: 20px;
-
   font-family: 'Times';
 }
 
@@ -86,7 +112,7 @@ h3 {
 
 .divider {
   padding-bottom: 50px;
-  margin: 150px 0;
+  margin: 100px 0;
 }
 
 .divider h1 {
@@ -119,6 +145,10 @@ h3 {
 /*
   Social icon link styles
 */
+.socials {
+  padding-top: 30px;
+}
+
 .socials li {
   list-style: none;
   text-align: left;
@@ -139,10 +169,6 @@ h3 {
 /*
   Footer styles
 */
-footer {
-  margin-top: 60px;
-}
-
 .footer-list {
   text-align: center;
   margin-top: 10px;
