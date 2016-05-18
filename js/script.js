@@ -8,7 +8,6 @@ $(document).ready(() => {
 
 
 
-
   /* Headroom.js code */
   // grab an element
   var myElement = document.querySelector("#header");
