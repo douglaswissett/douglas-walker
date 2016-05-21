@@ -8,12 +8,10 @@ html, body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #F8FCFB;
 }
-img { width: 100%; }
-.masthead {
-  width: 100%;
-  height: 100%;
-  background-image: url('../img/stones.jpg');
+a:hover, a:focus {
+  text-decoration: none !important;
 }
+img { width: 100%; }
 #profile {
   width: 25%;
   border-radius: 100%;
@@ -22,12 +20,15 @@ img { width: 100%; }
   Section styles
 */
 .container { margin-top: 80px; }
+.container.work {
+  position: relative;
+  top: 110px;
+}
 #work { margin-bottom: 40px; }
 .work-section { padding: 0; }
 .web-design { padding-left: 20px; }
 header { text-align: center; }
 section { padding: 40px 0 60px; }
-p { font-family: 'Times'; }
 h3 { padding: 20px; }
 .center { text-align: center; }
 .big {
@@ -47,7 +48,29 @@ h3 { padding: 20px; }
   width: 80%;
   margin: 0 auto;
 }
-.about-intro { margin-bottom: 21px; }
+.about-p.exp {
+  position: relative;
+  top: -12px;
+  left: 142px;
+}
+.about-p.skills {
+  position: relative;
+  left: 142px;
+  top: -12px;
+}
+.about-intro { 
+  margin-bottom: 21px;
+  position: relative;
+  left: -44px;
+  font-size: 38px;
+}
+.in-berlin {
+  position: relative;
+  top: 78px;
+  left: 68px;
+}
+.row-design { margin-top: 150px; }
+.row-dev { height: 270px; }
 /*
   Section Image
 */
@@ -55,6 +78,17 @@ h3 { padding: 20px; }
   text-align: center;
   position: relative;
   top: 50%;
+}
+.section-image.design {
+  width: 120%;
+  position: relative;
+  top: -75px;
+}
+.section-image.dev {
+  width: 200%;
+  position: relative;
+  top: -120px;
+  left: -120px;
 }
 .divider {
   padding-bottom: 50px;

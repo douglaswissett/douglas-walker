@@ -13,18 +13,18 @@ $(document).ready(() => {
   // Navigation anchor links slow scroll animate on page
   $('.aboutNav').click((e) => {
     e.preventDefault();
-    $('html, body').animate({scrollTop: $('#profile').offset().top - 20 }, 1500);
+    $('html, body').animate({scrollTop: $('#profile').offset().top - 20 }, 800);
   });
   $('.workNav').click((e) => {
     e.preventDefault();
-    $('html, body').animate({scrollTop: $('#work').offset().top - 30 }, 1500);
+    $('html, body').animate({scrollTop: $('#work').offset().top - 160 }, 800);
   });
   $('.contactNav').click((e) => {
     e.preventDefault();
-    $('html, body').animate({scrollTop: $('#contact').offset().top - 30 }, 1500);
+    $('html, body').animate({scrollTop: $('#contact').offset().top - 30 }, 800);
   });
   $('#contactHere').click((e) => {
     e.preventDefault();
-    $('html, body').animate({scrollTop: $('#contactForm').offset().top - 120 }, 1500);
+    $('html, body').animate({scrollTop: $('#contact').offset().top - 30 }, 800);
   });
 });
