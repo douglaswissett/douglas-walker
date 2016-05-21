@@ -1,11 +1,15 @@
 $(document).ready(() => {
+  // fullPage.js init
+  $('#fullpage').fullpage({
+    scrollBar: true
+  });
   /* Headroom.js code */
   // grab an element
   var myElement = document.querySelector("#header");
   // construct an instance of Headroom, passing the element
   var headroom  = new Headroom(myElement);
   // initialise
-  headroom.init(); 
+  headroom.init();
   // Navigation anchor links slow scroll animate on page
   $('.aboutNav').click((e) => {
     e.preventDefault();
