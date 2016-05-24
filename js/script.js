@@ -3,6 +3,7 @@ $(document).ready(() => {
   $('#fullpage').fullpage({
     scrollBar: true,
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+    scrollingSpeed: 1500,
 
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
@@ -39,4 +40,8 @@ $(document).ready(() => {
     e.preventDefault();
     $('html, body').animate({scrollTop: $('#contact').offset().top - 30 }, 800);
   });
+
+  $('#findMore').click((e) => {
+    $.fn.fullpage.moveTo(2);
+  })
 });

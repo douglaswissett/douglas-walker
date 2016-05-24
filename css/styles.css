@@ -13,7 +13,7 @@ a:hover, a:focus {
 }
 img { width: 100%; }
 #profile {
-  width: 25%;
+  width: 190px;
   border-radius: 100%;
 }
 /*
@@ -43,6 +43,16 @@ h3 { padding: 20px; }
   letter-spacing: .5px;
   line-height: 28px;
 }
+.container.pageOne {
+  position: relative;
+  top: 100px;
+}
+#findMore {
+  position: relative;
+  left: 46%;
+  top: 100px;
+  font-size: 32px;
+}
 /*
   About Section Styles
 */
@@ -52,13 +62,13 @@ h3 { padding: 20px; }
 }
 .about-p.exp {
   position: relative;
-  top: -12px;
+  top: -50px;
   left: 185px;
 }
 .about-p.skills {
   position: relative;
   left: 185px;
-  top: -12px;
+  top: -26px;
 }
 .about-section { height: 645px; }
 .about-intro { 
@@ -70,19 +80,13 @@ h3 { padding: 20px; }
 .in-berlin {
   position: relative;
   top: 78px;
-  left: 68px;
+  left: 0;
 }
 .row-design { margin-top: 150px; }
 .row-dev { height: 270px; }
 /*
   Section Image
 */
-#earth-img {
-  width: 200px;
-  position: absolute;
-  top: -260px;
-  right: -200px;
-}
 .section-image {
   text-align: center;
   position: relative;
@@ -209,4 +213,30 @@ nav {
   -moz-transition: 1s;
   -ms-transition: 1s;
   transition: 1s;
+}
+/*
+  Fullpage.js
+*/
+#slide-1 { background: orange; }
+#slide-2 { background: violet; }
+.fullpage-wrapper {
+  width: 100%!important;
+  transform: none!important;
+}
+
+.fp-section {
+  width: 100%!important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: all .7s ease-in-out;
+}
+
+.fp-section.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
 }
