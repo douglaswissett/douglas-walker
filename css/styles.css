@@ -22,10 +22,12 @@ img { width: 100%; }
 .container { margin-top: 80px; }
 .container.work {
   position: relative;
-  top: 110px;
+  top: 60px;
 }
 #work { margin-bottom: 40px; }
+#work h1 { font-size: 48px; }
 .work-section { padding: 0; }
+.work-section-push { height: 350px; }
 .web-design { padding-left: 20px; }
 header { text-align: center; }
 section { padding: 40px 0 60px; }
@@ -51,13 +53,14 @@ h3 { padding: 20px; }
 .about-p.exp {
   position: relative;
   top: -12px;
-  left: 142px;
+  left: 185px;
 }
 .about-p.skills {
   position: relative;
-  left: 142px;
+  left: 185px;
   top: -12px;
 }
+.about-section { height: 645px; }
 .about-intro { 
   margin-bottom: 21px;
   position: relative;
@@ -74,6 +77,12 @@ h3 { padding: 20px; }
 /*
   Section Image
 */
+#earth-img {
+  width: 200px;
+  position: absolute;
+  top: -260px;
+  right: -200px;
+}
 .section-image {
   text-align: center;
   position: relative;
@@ -98,6 +107,7 @@ h3 { padding: 20px; }
   font-size: 40px;
   letter-spacing: 4px;
 }
+#contact h1 {font-size: 48px;}
 /*
   Email form input styles
 */

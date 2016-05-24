@@ -1,7 +1,19 @@
 $(document).ready(() => {
   // fullPage.js init
   $('#fullpage').fullpage({
-    scrollBar: true
+    scrollBar: true,
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+
+    afterLoad: function(anchorLink, index){
+      var loadedSection = $(this);
+
+      //using index
+      if(index == 2){
+        setTimeout(() => {
+          $('#earth-img').animate({ top: '300', right: '160'}, { duration: 1500,easing: "easeOutBounce"});
+        }, 200);
+      }
+    }
   });
   /* Headroom.js code */
   // grab an element
