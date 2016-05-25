@@ -43,5 +43,8 @@ $(document).ready(() => {
 
   $('#findMore').click((e) => {
     $.fn.fullpage.moveTo(2);
-  })
+  });
+  
+  $('#scene').parallax();
+  
 });

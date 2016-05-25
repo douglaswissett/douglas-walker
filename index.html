@@ -14,6 +14,7 @@
   <script src="js/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.min.js"></script>
   <script src="js/velocity.js"></script>
+  <script src="js/parallax.min.js"></script>
   <script src="js/script.js"></script>
   <title>Douglas Walker</title>
 </head>
@@ -37,6 +38,26 @@
 </header>
 <!-- fullPage.js containers -->
 <div id="fullpage">
+  <!-- Parallax Demo Section -->
+  <div class="section">
+    <div class="para-container clearfix">
+      <ul id="scene">
+        <li class="layer" data-depth="0.00">
+          <div class="background"></div>
+        </li>
+        <li class="layer" data-depth="0.60">
+          <div class="kurama">
+            <img src="./img/kurama.png" alt="">
+          </div>
+        </li>
+        <li class="layer" data-depth="0.40" data-invert-y="false">
+          <div class="landscape">
+            <img src="./img/landscape.png" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="section">
     <div class="container pageOne">
     <!-- Profile circular image -->
@@ -55,10 +76,6 @@
         </section>
       </div>
     </div>
-  </div>
-  <div class="section">
-    <div class="slide" id="slide-1"></div>
-    <div class="slide" id="slide-2"></div>
   </div>
   <div class="section">
     <div class="container">
@@ -96,6 +113,10 @@
         </section>
       </div>
     </div>
+  </div>
+  <div class="section">
+    <div class="slide" id="slide-1"></div>
+    <div class="slide" id="slide-2"></div>
   </div>
   <div class="section">
     <div class="container">
@@ -176,27 +197,8 @@
     </footer>
   </div>
 </div>
-<!-- Site body container -->
-  <!-- <div class="container"> -->
-  <!-- Section divider -->
-<!--     <div class="row">
-      <div class="col-md-12">
-        <header class="divider">
-          <h1>.  .   .   .   .</h1>
-        </header>
-      </div>
-    </div> -->
-  <!-- Section divider -->
-<!--     <div class="row">
-      <div class="col-md-12">
-        <header class="divider">
-          <h1>.  .   .   .   .</h1>
-        </header>
-      </div>
-    </div>
-  </div> -->
-<!-- Site footer -->
   <!-- Scripts -->
+  <script src="js/jquery.parallax.min.js"></script>
   <script type="text/javascript" src="js/headroom.js"></script>
 </body>
 </html>
