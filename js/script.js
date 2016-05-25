@@ -3,7 +3,7 @@ $(document).ready(() => {
   $('#fullpage').fullpage({
     scrollBar: true,
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-    scrollingSpeed: 1500,
+    scrollingSpeed: 800,
 
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
