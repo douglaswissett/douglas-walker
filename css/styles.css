@@ -84,6 +84,39 @@ h3 { padding: 20px; }
 }
 .row-design { margin-top: 150px; }
 .row-dev { height: 270px; }
+
+.container.my-work {
+  margin-top: -65px;
+}
+.my-work-header {
+  position: relative;
+  top: -40px;
+  left: 185px;
+  font-size: 48px;
+}
+.work-ul {
+  position: relative;
+  top: -110px;
+  left: 560px;
+}
+.work-ul li { 
+  margin: 40px;
+  font-size: 32px;
+  list-style: none;
+}
+.slide-header {
+  font-size: 48px;
+  position: relative;
+  top: -100px;
+  left: 685px;
+}
+.my-work-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 400px;
+}
 /*
   Section Image
 */
@@ -217,13 +250,10 @@ nav {
 /*
   Fullpage.js
 */
-#slide-1 { background: orange; }
-#slide-2 { background: violet; }
 .fullpage-wrapper {
   width: 100%!important;
   transform: none!important;
 }
-
 .fp-section {
   width: 100%!important;
   position: absolute;
@@ -234,18 +264,15 @@ nav {
   z-index: 0;
   transition: all .7s ease-in-out;
 }
-
 .fp-section.active {
   visibility: visible;
   opacity: 1;
   z-index: 1;
 }
-
 .fp-slidesContainer {
   width: 100%!important;
   transform: none!important;
 }
-
 .fp-slide {
   width: 100%!important;
   position: absolute;
@@ -256,7 +283,6 @@ nav {
   z-index: 0;
   transition: all .7s ease-in-out;
 }
-
 .fp-slide.active {
   visibility: visible;
   opacity: 1;
@@ -268,15 +294,16 @@ nav {
   Parallax demo styles
 */
 .para-container {width:104%; height:104%; overflow:hidden; position:relative; margin:50px auto; border:10px solid #0B292D; background:#000; left: -55px;}
-.background {background:url(../img/huge_bg.jpg); width:100%; height:860px; }
+.background {background-color: #F8FCFB; width:100%; height:860px; }
 .clearfix:before, .clearfix:after {content: " "; display: table;}  
 .clearfix:after {clear:both;}  
 .clearfix {*zoom:1;}  
 .layer div {position:absolute;}
-.kurama{top:-100px; left:50px;}
-.minato{top:330px; left:450px;}
-.obito{top:520px; left:750px;}
-.landscape{top:500px; left:-50px;}
+.kurama{top:200px; left:50%;}
+.minato{top:395px; left:450px;}
+.obito{top:520px; left:850px;}
+.landscape{top:600px; left:-50px;}
 .landscape img { width: 104%; }
 .grass{top:700px; left:-50px;} 
-.leaves{top:350px; left:200px;}
+.grass img { width: 104%; }
+.leaves{top:350px; left:260px;}

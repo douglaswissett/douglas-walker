@@ -43,8 +43,24 @@ $(document).ready(() => {
 
   $('#findMore').click((e) => {
     $.fn.fullpage.moveTo(2);
-  });
-  
+  });  
   $('#scene').parallax();
   
+  // My work slideshow image cycles
+  function fadeInLastImg(index) {
+    var backImg = $('.ss'+index+' img:first');
+    backImg.hide();
+    backImg.remove();
+    $('.ss'+index ).append( backImg );
+    backImg.fadeIn({ duration: 1500 })
+  };
+  $('.my-work-img').each((index) => {
+    setInterval(function(){
+      fadeInLastImg(index + 1)
+    }, 4000);
+  })
+
+
+
+
 });
