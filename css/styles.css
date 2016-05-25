@@ -267,11 +267,16 @@ nav {
 /*
   Parallax demo styles
 */
-.para-container {width:1024px; height:768px; overflow:hidden; position:relative; margin:50px auto; border:10px solid #0B292D; background:#000;}
-.background {background:url(../img/huge_bg.jpg); width:1024px; height:768px; }
-.layer div {position:absolute;}
-.kurama{top:-100px; left:-150px;}
-.landscape{top:500px; left:-250px;}
+.para-container {width:104%; height:104%; overflow:hidden; position:relative; margin:50px auto; border:10px solid #0B292D; background:#000; left: -55px;}
+.background {background:url(../img/huge_bg.jpg); width:100%; height:860px; }
 .clearfix:before, .clearfix:after {content: " "; display: table;}  
 .clearfix:after {clear:both;}  
 .clearfix {*zoom:1;}  
+.layer div {position:absolute;}
+.kurama{top:-100px; left:50px;}
+.minato{top:330px; left:450px;}
+.obito{top:520px; left:750px;}
+.landscape{top:500px; left:-50px;}
+.landscape img { width: 104%; }
+.grass{top:700px; left:-50px;} 
+.leaves{top:350px; left:200px;}
