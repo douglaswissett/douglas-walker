@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  $('.about-col').hide();
   // fullPage.js init
   $('#fullpage').fullpage({
     scrollBar: true,
@@ -10,9 +11,8 @@ $(document).ready(() => {
 
       //using index
       if(index == 2){
-        setTimeout(() => {
-          $('#earth-img').animate({ top: '300', right: '160'}, { duration: 1500,easing: "easeOutBounce"});
-        }, 200);
+        $('.about-col').fadeIn();
+        $('.about-col').addClass('animated bounceInUp');
       }
     }
   });

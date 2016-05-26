@@ -38,18 +38,13 @@ h3 { padding: 20px; }
   font-size: 2.4em;
   letter-spacing: -4px;
 }
-.pStyle {
-  font-size: 1.3em;
-  letter-spacing: .5px;
-  line-height: 28px;
-}
 .container.pageOne {
   position: relative;
   top: 100px;
 }
 #findMore {
   top: 300px;
-  left: 500px;
+  left: 900px;
   background: #F8FCFB;
   text-align: center;
   padding: 12px;
@@ -58,7 +53,7 @@ h3 { padding: 20px; }
   font-size: 16px;
 }
 .sectionTwo {
-  background: linear-gradient( 180deg, #112B1C 5%, #F8FCFB ); 
+  background: linear-gradient( 180deg, #444 5%, #F8FCFB ); 
 }
 /*
   About Section Styles
@@ -138,9 +133,9 @@ h3 { padding: 20px; }
 .section-image {
   text-align: center;
   position: relative;
-  top: 50%;
+  /*top: 50%;*/
 }
-.section-image.design {
+/*.section-image.design {
   width: 120%;
   position: relative;
   top: -75px;
@@ -150,7 +145,7 @@ h3 { padding: 20px; }
   position: relative;
   top: -120px;
   left: -120px;
-}
+}*/
 .divider {
   padding-bottom: 50px;
   margin: 100px 0;
@@ -223,6 +218,7 @@ nav {
 }
 #logo {
   margin: 0;
+  padding-top: 22px;
   text-align: center;
 }
 /*
@@ -296,8 +292,13 @@ nav {
 .kurama{top:200px; left:50%;}
 .minato{top:395px; left:450px;}
 .obito{top:520px; left:850px;}
-.landscape{top:600px; left:-50px;}
+.landscape{top:200px; left:350px;}
 .landscape img { width: 104%; }
-.grass{top:700px; left:-50px;} 
+.grass{top:400px; left:1250px;} 
 .grass img { width: 104%; }
 .leaves{top:350px; left:260px;}
+.float {
+  background-color: white;
+  width: 200px;
+  height: 150px;
+}
