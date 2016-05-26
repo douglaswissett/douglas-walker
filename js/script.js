@@ -3,15 +3,19 @@ $(document).ready(() => {
   $('.about-col').hide();
   $('.about-col-header').hide();
   $('#work h1').hide();
-  $('.row-design').hide();
+  $('.web-design').hide();
+  $('.section-image.design').hide();
   $('.row-dev').hide();
   $('.about-btn').hide();
+  $('.my-work-header').hide();
+  $('.work-ul').hide();
   // fullPage.js init
   $('#fullpage').fullpage({
     scrollBar: true,
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-    scrollingSpeed: 700,
+    scrollingSpeed: 1000,
     loopHorizontal: false,
+    responsiveWidth: 900,
 
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
@@ -19,34 +23,46 @@ $(document).ready(() => {
       if(index == 1) {
         // hide fixed nav arrows  
         $('.nav-arrow').fadeOut();
-        setTimeout(() => {
-          $('.kurama h1').addClass('animated flipInY');
-        }, 200 );
-        $('.float-1').addClass('animated bounceInLeft');
-        $('.float-2').addClass('animated bounceInLeft');
-        $('.obito h1').addClass('animated bounceInLeft');
-        $('.minato h1').addClass('animated bounceInLeft')
-        $('#findMore').addClass('animated bounceInUp');
+        $('.kurama h1').fadeIn();
+        $('.float-1').fadeIn();
+        $('.float-2').fadeIn();
+        $('.obito h1').fadeIn();
+        $('.minato h1').fadeIn();
+        $('#findMore').fadeIn();
+        $('.kurama h1').addClass('animated slideInLeft');
+        $('.float-1').addClass('animated slideInLeft');
+        $('.float-2').addClass('animated slideInRight');
+        $('.obito h1').addClass('animated slideInLeft');
+        $('.minato h1').addClass('animated slideInRight')
+        $('#findMore').addClass('animated slideInUp');
       }
       if(index == 2){
         // show fixed nav arrows
-        $('.arrow-bottom').fadeIn();
-        $('.arrow-bottom').addClass('flipInX');
+        $('.nav-arrow').fadeIn();
+        $('.nav-arrow').addClass('flipInX');
         // animate.css
-        $('.about-col').fadeIn();
+        
         $('.about-col-header').fadeIn();
-        $('.about-col').addClass('animated bounceInUp');
-        $('.about-col-header').addClass('animated bounceInDown');
+        setTimeout(()=>{
+          $('.about-col').fadeIn();
+          $('.about-col').addClass('animated slideInUp');
+        },1000);
+        $('.about-col-header').addClass('animated slideInLeft');
       }
       if(index == 3) {
         // display fixed nav arrows
         $('.nav-arrow').fadeIn();
         $('.nav-arrow').addClass('flipInX')
         // animate.css
-        setTimeout(() => { $('#work h1').fadeIn(); $('#work h1').addClass('animated zoomIn');
-        }, 200 );
-        $('.row-design').fadeIn();
-        $('.web-design').addClass('animated fadeInLeft');
+        $('#work h1').fadeIn(); 
+        $('#work h1').addClass('animated slideInLeft');
+        
+
+        setTimeout(()=>{
+          $('.web-design').fadeIn();
+          $('.web-design').addClass('animated fadeInLeft');
+        },1000);
+        $('.section-image.design').fadeIn();
         $('.section-image.design').addClass('animated bounceInLeft');
         $('.row-dev').fadeIn();
         $('.row-dev').addClass('animated rollIn');
@@ -55,11 +71,20 @@ $(document).ready(() => {
         // display fixed nav arrows
         $('.nav-arrow').fadeIn();
         $('.nav-arrow').addClass('flipInX')
+        // animate.css
+        $('.my-work-header').fadeIn();
+        $('.my-work-header').addClass('animated slideInLeft');
+        setTimeout(()=>{
+          $('.work-ul').fadeIn();
+          $('.work-ul').addClass('animated slideInUp');
+        },1000);
       }
       if(index == 5) {
         // display fixed nav arrows
         $('.nav-arrow').fadeIn();
         $('.nav-arrow').addClass('flipInX')
+
+        $('.container.contact-container').addClass('animated tada')
       }
       if(index == 6) {
         $('.arrow-bottom').fadeOut();
@@ -67,16 +92,44 @@ $(document).ready(() => {
     },
     onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
       let leavingSlide = $(this);
+      // $('.special-line').removeClass('zoomInRight');
+      // $('.special-line').addClass('zoomOutLeft');
       //leaving the first slide of the 2nd Section to the right
-      if(index == 4 && slideIndex == 0 && direction == 'right'){
-        $('.special-line').removeClass('zoomInRight');
-        $('.special-line').addClass('zoomOutLeft');
-      }
-      //leaving the 3rd slide of the 2nd Section to the left
-      if(index == 4 && slideIndex == 1 && direction == 'left'){
-        $('.special-line').removeClass('zoomOutLeft');
-        $('.special-line').addClass('zoomInRight');
-      }
+      // if(index == 4 && slideIndex == 0 && direction == 'right'){
+      //   $('.vertical-line').removeClass('slideOutRight slideInRight');
+      //   $('.special-line').removeClass('fadeInRightBig');
+      //   $('.special-line').addClass('fadeOutLeftBig');
+      // }
+      // //leaving the 3rd slide of the 2nd Section to the left
+      // if(index == 4 && slideIndex == 1 && direction == 'left'){
+      //   $('.special-line').removeClass('fadeOutLeftBig');
+      //   $('.special-line').addClass('fadeInRightBig');
+      // }
+    },
+    onLeave: function(index, nextIndex, direction){
+      let leavingSection = $(this);
+      // hide all animated elements
+      $('.kurama h1').fadeOut();
+      $('.float-1').fadeOut();
+      $('.float-2').fadeOut();
+      $('.obito h1').fadeOut();
+      $('.minato h1').fadeOut();
+      $('#findMore').fadeOut();
+      $('.about-col').fadeOut();
+      $('.about-col-header').fadeOut();
+      $('#work h1').fadeOut();
+      $('.web-design').fadeOut();
+      $('.section-image.design').fadeOut();
+      $('.row-dev').fadeOut();
+      $('.about-btn').fadeOut();
+      $('.my-work-header').fadeOut();
+      $('.work-ul').fadeOut();
+      // vertical black line animation
+      $('.vertical-line').addClass('animated fadeOutRightBig');
+      setTimeout(() => {
+        $('.vertical-line').removeClass('fadeOutRightBig');
+        $('.vertical-line').addClass('fadeInRightBig');
+      },1000);
     }
   });
   // fullPage.js btn navigation
@@ -130,6 +183,6 @@ $(document).ready(() => {
   $('.my-work-img').each((index) => {
     setInterval(function(){
       fadeInLastImg(index + 1)
-    }, 4000);
+    }, 3000);
   })
 });
