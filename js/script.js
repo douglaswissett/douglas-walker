@@ -1,5 +1,10 @@
 $(document).ready(() => {
+  // init hide animate.css elements
   $('.about-col').hide();
+  $('.about-col-header').hide();
+  $('#work h1').hide();
+  $('.row-design').hide();
+  $('.row-dev').hide();
   // fullPage.js init
   $('#fullpage').fullpage({
     scrollBar: true,
@@ -10,9 +15,32 @@ $(document).ready(() => {
       var loadedSection = $(this);
 
       //using index
+      if(index == 1) {
+        setTimeout(() => {
+          $('.kurama h1').addClass('animated flipInY');
+        }, 200 );
+        $('.float-1').addClass('animated bounceInLeft');
+        $('.float-2').addClass('animated bounceInRight');
+        $('.obito h1').addClass('animated bounceInLeft');
+        $('.minato h1').addClass('animated bounceInLeft')
+        $('#findMore').addClass('animated bounceInUp');
+      }
       if(index == 2){
-        $('.about-col').fadeIn();
+        $('.about-col').show();
+        $('.about-col-header').show();
         $('.about-col').addClass('animated bounceInUp');
+        $('.about-col-header').addClass('animated bounceInDown');
+      }
+      if(index == 3) {
+        setTimeout(() => {
+          $('#work h1').show();
+          $('#work h1').addClass('animated zoomIn');
+        }, 200 );
+        $('.row-design').show();
+        $('.web-design').addClass('animated fadeInLeft');
+        $('.section-image.design').addClass('animated bounceInLeft');
+        $('.row-dev').show();
+        $('.row-dev').addClass('animated rollIn');
       }
     }
   });
@@ -40,12 +68,11 @@ $(document).ready(() => {
     e.preventDefault();
     $('html, body').animate({scrollTop: $('#contact').offset().top - 30 }, 800);
   });
-
   $('#findMore').click((e) => {
     $.fn.fullpage.moveTo(2);
   });  
   $('#scene').parallax();
-  
+  $('#scene2').parallax();
   // My work slideshow image cycles
   function fadeInLastImg(index) {
     var backImg = $('.ss'+index+' img:first');
@@ -59,8 +86,4 @@ $(document).ready(() => {
       fadeInLastImg(index + 1)
     }, 4000);
   })
-
-
-
-
 });

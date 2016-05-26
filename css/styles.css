@@ -23,9 +23,15 @@ img { width: 100%; }
 .container.work {
   position: relative;
   top: 60px;
+  background-color: white;
+  height: 560px;
 }
 #work { margin-bottom: 40px; }
-#work h1 { font-size: 48px; }
+#work h1 { 
+  font-size: 48px;
+  -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
+  animation-duration: 1.5s; 
+}
 .work-section { padding: 0; }
 .work-section-push { height: 350px; }
 .web-design { padding-left: 20px; }
@@ -58,10 +64,25 @@ h3 { padding: 20px; }
 /*
   About Section Styles
 */
+.vertical-line {
+  position: absolute;
+  width: 870px;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  right: 200px;
+}
+.about-col-header {
+  position: relative;
+  top: -120px;
+  left: -4px;
+}
+.about-col-header h1 { font-size: 48px; }
 .about-p {
   width: 80%;
   margin: 0 auto;
   color: white;
+  font-size: 18px;
 }
 .about-p.exp {
   position: relative;
@@ -85,8 +106,8 @@ h3 { padding: 20px; }
   top: 78px;
   left: 0;
 }
-.row-design { margin-top: 150px; }
-.row-dev { height: 270px; }
+.row-design { margin-top: 50px; }
+.row-dev { height: 270px; margin-top: 20px;}
 
 .container.my-work {
   margin-top: -20px;
@@ -155,17 +176,45 @@ h3 { padding: 20px; }
   letter-spacing: 4px;
 }
 #contact h1 {font-size: 48px;}
+.container.contact-container {
+  background: white;
+  width: 70%;
+  height: 75%;
+}
+.contact-form-header {
+  margin-bottom: 75px;
+  margin-top: 20px;
+  text-align: left;
+}
+.contact-left-col {
+  margin-bottom: 165px;
+}
+.contact-left-col p {
+  width: 350px;
+  font-size: 18px;
+}
+.bs-contact-left {
+  width: 600px !important;
+  left: 100px;
+}
+.bs-contact-right {
+  width: 600px !important;
+  left: 600px;
+  top: 126px;
+}
 /*
   Email form input styles
 */
-.subjectBox { width: 350px; }
+.subjectBox { width: 94%; padding: 10px }
 .messageBox {
-  width: 350px;
-  height: 100px;
+  width: 94%;
+  height: 140px;
+  padding: 10px;
 }
 .formBtn {
+  float: right;
+  margin: 20px 26px;
   width: 100px;
-  margin-bottom: 20px;
 }
 /*
   Social icon link styles
@@ -301,4 +350,14 @@ nav {
   background-color: white;
   width: 200px;
   height: 150px;
+}
+.para-container.para-2 {}
+.background2 {
+  background-color: pink;
+}
+.foreground2 {
+  width: 100%;
+  height: 800px;
+  left: 315px;
+  top: 40px;
 }
