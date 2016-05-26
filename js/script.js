@@ -5,6 +5,7 @@ $(document).ready(() => {
   $('#work h1').hide();
   $('.row-design').hide();
   $('.row-dev').hide();
+  $('.about-btn').hide();
   // fullPage.js init
   $('#fullpage').fullpage({
     scrollBar: true,
@@ -19,8 +20,8 @@ $(document).ready(() => {
         setTimeout(() => {
           $('.kurama h1').addClass('animated flipInY');
         }, 200 );
-        $('.float-1').addClass('animated bounceInLeft');
-        $('.float-2').addClass('animated bounceInRight');
+        // $('.float-1').addClass('animated bounceInLeft');
+        // $('.float-2').addClass('animated bounceInRight');
         $('.obito h1').addClass('animated bounceInLeft');
         $('.minato h1').addClass('animated bounceInLeft')
         $('#findMore').addClass('animated bounceInUp');
@@ -30,6 +31,17 @@ $(document).ready(() => {
         $('.about-col-header').show();
         $('.about-col').addClass('animated bounceInUp');
         $('.about-col-header').addClass('animated bounceInDown');
+        $('.about-btn').show();
+        $('.about-btn').addClass('animated bounceInDown');
+        // buggy hinge        
+        // setTimeout(() => {
+        //   $('.about-btn').removeClass('infinite bounce');
+        //   $('.about-btn').addClass('hinge');
+        //   setTimeout(() => {
+        //     $('.about-btn').removeClass('hinge');
+        //     $('.about-btn').hide();
+        //   },2000);
+        // },4000);
       }
       if(index == 3) {
         setTimeout(() => {

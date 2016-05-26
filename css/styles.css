@@ -26,7 +26,7 @@ img { width: 100%; }
   background-color: white;
   height: 560px;
 }
-#work { margin-bottom: 40px; }
+#work { margin: 50px 0 40px; }
 #work h1 { 
   font-size: 48px;
   -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
@@ -70,7 +70,7 @@ h3 { padding: 20px; }
   height: 100%;
   background-color: black;
   top: 0;
-  right: 200px;
+  right: 100px;
 }
 .about-col-header {
   position: relative;
@@ -78,11 +78,16 @@ h3 { padding: 20px; }
   left: -4px;
 }
 .about-col-header h1 { font-size: 48px; }
+.about-btn {
+  position: relative;
+  left: 900px;
+  top: 120px;
+  width: 150px;
+}
 .about-p {
   width: 80%;
   margin: 0 auto;
   color: white;
-  font-size: 18px;
 }
 .about-p.exp {
   position: relative;
@@ -178,24 +183,22 @@ h3 { padding: 20px; }
 #contact h1 {font-size: 48px;}
 .container.contact-container {
   background: white;
-  width: 70%;
+  width: 86%;
   height: 75%;
+  left: -200px;
 }
 .contact-form-header {
-  margin-bottom: 75px;
-  margin-top: 20px;
+  margin-bottom: 64px;
+  margin-top: 32px;
   text-align: left;
-}
-.contact-left-col {
-  margin-bottom: 165px;
 }
 .contact-left-col p {
   width: 350px;
-  font-size: 18px;
+  margin-bottom: 32px;
 }
 .bs-contact-left {
   width: 600px !important;
-  left: 100px;
+  left: 50px;
 }
 .bs-contact-right {
   width: 600px !important;
@@ -205,11 +208,17 @@ h3 { padding: 20px; }
 /*
   Email form input styles
 */
-.subjectBox { width: 94%; padding: 10px }
+#contactForm h4 {
+  margin-bottom: 32px;
+}
+.subjectBox { width: 125%; padding: 10px; margin-bottom: 16px; }
 .messageBox {
-  width: 94%;
+  width: 125%;
   height: 140px;
   padding: 10px;
+}
+textarea {
+  resize: none;
 }
 .formBtn {
   float: right;
@@ -351,6 +360,8 @@ nav {
   width: 200px;
   height: 150px;
 }
+.float-1 { left: -100px; }
+.float-2 { left: -1040px; }
 .para-container.para-2 {}
 .background2 {
   background-color: pink;
