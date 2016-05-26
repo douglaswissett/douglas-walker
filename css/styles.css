@@ -11,6 +11,7 @@ html, body {
 a:hover, a:focus {
   text-decoration: none !important;
 }
+button:focus {outline:0 !important;}
 img { width: 100%; }
 #profile {
   width: 190px;
@@ -37,7 +38,6 @@ img { width: 100%; }
 .web-design { padding-left: 20px; }
 header { text-align: center; }
 section { padding: 40px 0 60px; }
-h3 { padding: 20px; }
 .center { text-align: center; }
 .big {
   display: inline;
@@ -50,7 +50,7 @@ h3 { padding: 20px; }
 }
 #findMore {
   top: 300px;
-  left: 900px;
+  left: 700px;
   background: #F8FCFB;
   text-align: center;
   padding: 12px;
@@ -64,6 +64,13 @@ h3 { padding: 20px; }
 /*
   About Section Styles
 */
+.para-vertical-line {
+  width: 870px;
+  height: 1000px;
+  background: black;
+  right: 88px;
+  opacity: .8;
+}
 .vertical-line {
   position: absolute;
   width: 870px;
@@ -71,6 +78,7 @@ h3 { padding: 20px; }
   background-color: black;
   top: 0;
   right: 100px;
+  opacity: .8;
 }
 .about-col-header {
   position: relative;
@@ -78,12 +86,6 @@ h3 { padding: 20px; }
   left: -4px;
 }
 .about-col-header h1 { font-size: 48px; }
-.about-btn {
-  position: relative;
-  left: 900px;
-  top: 120px;
-  width: 150px;
-}
 .about-p {
   width: 80%;
   margin: 0 auto;
@@ -113,7 +115,9 @@ h3 { padding: 20px; }
 }
 .row-design { margin-top: 50px; }
 .row-dev { height: 270px; margin-top: 20px;}
-
+.container.my-work-container {
+  color: white;
+}
 .container.my-work {
   margin-top: -20px;
   padding: 55px 0;
@@ -123,13 +127,14 @@ h3 { padding: 20px; }
 .container.my-work.first-my-work {
   position: relative;
   left: -90px;
-  width: 106%;
+  width: 108%;
+  padding: 55px 0;
 }
 .my-work-header {
   position: relative;
-  top: -40px;
-  left: 185px;
-  font-size: 48px;
+  top: -170px;
+  left: 280px;
+  font-size: 64px;
 }
 .work-ul {
   position: relative;
@@ -137,7 +142,7 @@ h3 { padding: 20px; }
   left: 560px;
 }
 .work-ul li { 
-  margin: 40px;
+  margin: 16px;
   font-size: 32px;
   list-style: none;
 }
@@ -154,31 +159,32 @@ h3 { padding: 20px; }
   height: 400px;
 }
 /*
+  Arrow navs
+*/
+.arrow-top {
+  position: fixed;
+  top: 0;
+  left: 46%;
+  width: 130px;
+  z-index: 99;
+}
+.arrow-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 46%;
+  width: 130px;
+  z-index: 99;
+}
+/*
   Section Image
 */
 .section-image {
   text-align: center;
   position: relative;
-  /*top: 50%;*/
 }
-/*.section-image.design {
-  width: 120%;
+.skill-btn {
   position: relative;
-  top: -75px;
-}
-.section-image.dev {
-  width: 200%;
-  position: relative;
-  top: -120px;
-  left: -120px;
-}*/
-.divider {
-  padding-bottom: 50px;
-  margin: 100px 0;
-}
-.divider h1 {
-  font-size: 40px;
-  letter-spacing: 4px;
+  top: -90px;
 }
 #contact h1 {font-size: 48px;}
 .container.contact-container {
@@ -225,10 +231,20 @@ textarea {
   margin: 20px 26px;
   width: 100px;
 }
+.availability {
+  left: -45px;
+  top: -60px;
+  box-shadow: 2px 2px 8px grey;
+  padding: 22px;
+  border-radius: 4px;
+}
 /*
   Social icon link styles
 */
-.socials { padding-top: 30px; }
+.socials { 
+  padding-top: 30px;
+  top: 155px;
+}
 .socials li {
   list-style: none;
   text-align: left;
@@ -268,6 +284,7 @@ nav {
 .nav-list {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 .nav-list li {
   display: inline-block;
@@ -276,15 +293,18 @@ nav {
 }
 #logo {
   margin: 0;
-  padding-top: 22px;
+  padding-top: 17px;
   text-align: center;
 }
 /*
   Headroom Styles
 */
+#header {
+  height: 50px;
+}
 .headroom {
   position: fixed;
-  z-index: 9998;
+  z-index: 90;
   top: 0;
   left: 0;
   right: 0;
@@ -296,7 +316,7 @@ nav {
   background: white;
 }
 .headroom--unpinned {
-  top: -120px;
+  top: 50px;
   -webkit-transition: .7s;
   -o-transition: .7s;
   -moz-transition: .7s;
@@ -341,7 +361,7 @@ nav {
 /*
   Parallax demo styles
 */
-.para-container {width:104%; height:104%; overflow:hidden; position:relative; margin:50px auto; border:10px solid #0B292D; background:#000; left: -55px;}
+.para-container {width:104%; height:108%; overflow:hidden; position:relative; margin:50px auto; border:10px solid #0B292D; background:#000; left: -55px;}
 .background {background: #444; width:100%; height:860px; }
 .clearfix:before, .clearfix:after {content: " "; display: table;}  
 .clearfix:after {clear:both;}  
@@ -362,7 +382,6 @@ nav {
 }
 .float-1 { left: -100px; }
 .float-2 { left: -1040px; }
-.para-container.para-2 {}
 .background2 {
   background-color: pink;
 }
