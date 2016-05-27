@@ -3,21 +3,21 @@ $(document).ready(()=>{
   $(".button-collapse").sideNav();
   // Init Parallax scenes
   $('#scene').parallax();
-  $('#scene2').parallax();
 
 
 
  $('#fullpage').fullpage({
-    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+    anchors: ['home', 'aboutme', 'about', 'skills', 'projects', 'contact'],
     scrollingSpeed: 700,
     responsiveWidth: 900,
     autoScrolling: false,
+    fitToSection: false,
   });
 
 
-
-
-
+    
+  $('.parallax').parallax();
+    
 
 
 
