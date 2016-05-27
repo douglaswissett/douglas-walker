@@ -68,11 +68,11 @@ section { padding: 40px 0 60px; }
 */
 .vertical-line {
   position: absolute;
-  width: 600px;
+  width: 50%;
   height: 100%;
   background-color: black;
   top: 0;
-  right: 100px;
+  right: 0;
 }
 .about-col-header {
   position: relative;
@@ -88,11 +88,11 @@ section { padding: 40px 0 60px; }
 .about-p.exp {
   position: relative;
   top: -50px;
-  left: 185px;
+  left: 245px;
 }
 .about-p.skills {
   position: relative;
-  left: 185px;
+  left: 245px;
   top: -26px;
 }
 .about-section { height: 645px; }
@@ -113,11 +113,12 @@ section { padding: 40px 0 60px; }
   color: white;
 }
 .container.my-work {
+  position: relative;
   margin-top: -20px;
   padding: 55px 0;
   width: 100%;
   height: 400px;
-  background: grey;
+  background: white;
   top: 70px;
 }
 .container.my-work.first-my-work {
@@ -132,21 +133,23 @@ section { padding: 40px 0 60px; }
 .my-work-header {
   position: fixed;
   top: 70px;
-  left: 390px;
+  left: 240px;
   font-size: 48px;
-  font-weight: bold;
+  color: black;
 }
 .slide-header {
   position: relative;
   top: -142px;
   font-size: 48px;
+  color: white;
 }
 .my-work-img img {
   position: absolute;
   top: -160px;
   left: 0;
   width: 620px;
-  height: 446px
+  height: 446px;
+  box-shadow: 2px 2px black;
 }
 /*
   Arrow navs
@@ -339,6 +342,9 @@ nav {
 /*
   Fullpage.js
 */
+.fp-controlArrow {
+  border-color: transparent transparent transparent black !important;
+}
 /*.fullpage-wrapper {
   width: 100%!important;
   transform: none!important;
