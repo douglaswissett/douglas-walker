@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='css/normalize.css'>
+  <link rel='stylesheet' href="css/styles.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.min.js"></script>
+  <script src="js/script.js"></script>
+  <title>Douglas Walker</title>
+</head>
+<body>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">About</a></li>
+        <li><a href="badges.html">Project</a></li>
+        <li><a href="collapsible.html">Contact</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">About</a></li>
+        <li><a href="badges.html">Project</a></li>
+        <li><a href="collapsible.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- fullPage.js containers -->
+<div id="fullpage">
+  <!-- Parallax Demo Section -->
+  <div class="section">
+    <div class="para-container clearfix">
+      <ul id="scene">
+        <li class="layer" data-depth="0.00">
+          <div class="background"></div>
+        </li>
+        <li class="layer" data-depth="0.60">
+          <div class="head-1">
+            <h1>Douglas Walker</h1>
+          </div>
+        </li>
+        <li class="layer" data-depth="0.40" data-invert-y="false">
+          <div class="head-2">
+            TEST
+          </div>
+        </li>
+        <li class="layer" data-depth="0.60">
+          <div class="head-3">
+            TEST2
+          </div>
+        </li>
+        <li class="layer" data-depth="1.20">
+          <div class="head-4">
+            <h1>In Berlin</h1>
+          </div>
+        </li>
+        <li class="layer" data-depth="1.00">
+          <div class="head-5">
+            <h1>Web developer</h1>
+          </div>
+        </li>
+        <li class="layer" data-depth="2.30">
+          <div class="head-6">
+            <div id="findMore">Find out more</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="section">
+    <div class="vertical-line"></div>
+    <h1 class="page-header">About me</h1>
+    <div class="container">
+      <div class="row">  
+        <div class="about-text">
+          <p>I have over two years of industry experience and am a Web Development Immersive graduate of General Assembly New York. I have been part of design and development projects throughout my experiences in the field.</p>
+          <br/>
+          <p>I specialize in standards-based XHTML, CSS and JavaScript web development. Each site I develop is built to be search engine friendly, using the latest development principes and techniques. To find out more about what I can do for you, checkout my work below, or get ahold of me by either email or by phone</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="vertical-line"></div>
+    <h1 class="page-header skill-header">What I can do</h1>
+    <div class="container skill">
+      <div class="row">
+        <div class="web-design">  
+          <div class="skill-image design">
+            <img src="./img/snake-1.png" alt="">
+          </div>
+          <div class="web-design-text">
+            <h2>Web Design</h2>
+            <p>I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.</p>
+          </div>
+        </div>
+        <div class="web-dev">
+          <div class="skill-image dev">
+            <img src="./img/snake-1.png" alt="">
+          </div>
+          <div class="web-dev-text">
+            <h2>Web Development</h2>
+            <p>I'm a developer, so I know how to create your website to run across multiple devices using the latest technologies available.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <h1 class="page-header">Projects</h1>
+    <div class="vertical-line"></div>
+    <div class="slide" id="slide-1">
+      <div class="container work firstSlide">
+        <div class="row">
+          <h1 class="slide-header">Snake</h1>
+          <div>
+            <div class="work-img ss1">
+              <img src="./img/snake-1.png" alt="">
+              <img src="./img/snake-2.png" alt="">
+              <img src="./img/snake-3.png" alt="">
+            </div>
+          </div>
+          <div class="slide-text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide" id="slide-2">
+      <div class="container work">
+        <div class="row">
+          <h1 class="slide-header">GoMission</h1>
+          <div>
+            <div class="work-img ss2">
+              <img src="./img/gomission-1.png" alt="">
+              <img src="./img/gomission-2.png" alt="">
+              <img src="./img/gomission-3.png" alt="">
+              <img src="./img/gomission-4.png" alt="">
+              <img src="./img/gomission-5.png" alt="">
+            </div>
+          </div>
+          <div class="slide-text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide" id="slide-3">
+      <div class="container work">
+        <div class="row">
+          <h1 class="slide-header">Privacle</h1>
+          <div>
+            <div class="work-img ss3">
+              <img src="./img/privacle-1.png" alt="">
+              <img src="./img/privacle-2.png" alt="">
+              <img src="./img/privacle-3.png" alt="">
+            </div>
+          </div>
+          <div class="slide-text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide" id="slide-4">
+      <div class="container work">
+        <div class="row">
+          <h1 class="slide-header">BWYE</h1>
+          <div>
+            <div class="work-img ss4">
+              <img src="./img/bwye-1.png" alt="">
+              <img src="./img/bwye-2.png" alt="">
+              <img src="./img/bwye-3.png" alt="">
+              <img src="./img/bwye-4.png" alt="">
+              <img src="./img/bwye-5.png" alt="">
+              <img src="./img/bwye-6.png" alt="">
+            </div>
+          </div>
+          <div class="slide-text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
+    </div>     
+  </div>
+  <div class="section">
+    <div class="para-container clearfix para-2">
+      <div class="vertical-line"></div>
+      <h1 class="page-header contact-header">Contact</h1>
+        <ul id="scene2">
+          <li class="layer" data-depth="0.60">
+            <div class="foreground2">
+              <div class="container contact-container">
+                <div class="row">
+                  <div>
+                    <p>If you have a project that you want to get started, think you need my help with something, then get in touch.</p>
+                      <!-- Contact form -->
+                    <form id="contactForm" action="mailto:douglas.wissett@gmail.com" method="GET">
+                      <h4>Email me!</h4>
+                      <input class="subjectBox" name="subject" type="text" placeholder="Subject" /><br/><br/>
+                      <textarea class="messageBox" name="body" placeholder="Message"></textarea><br/><br/>
+                      <input type="submit" value="Send" class="formBtn" />
+                    </form>
+                  </div>  
+                  <div>
+                    <div class="availability">
+                      <h2>Let me help you build your site</h2>
+                      <h3>I’m currently: available for work</h3>
+                    </div>
+                    <div class="contact-profile">
+                      <img src="./img/profile.jpg" alt="">
+                    </div>
+                    <div class="contact-right-col">
+                      <!-- Social links -->
+                      <div class="socials">
+                        <ul>
+                          <li>
+                            <a href="https://github.com/douglaswissett" target="_blank"><img src="./img/github.png" alt=""></a>
+                            <a href="https://github.com/douglaswissett" target="_blank">Github</a>
+                          </li>
+                          <li>
+                            <a href="https://uk.linkedin.com/in/douglaswissett" target="_blank"><img src="./img/linkedin.png" alt=""></a>
+                            <a href="https://uk.linkedin.com/in/douglaswissett" target="_blank">LinkedIn</a>
+                          </li>
+                          <li>
+                            <a href="https://www.facebook.com/douglaswissettwalker" target="_blank"><img src="./img/facebook.png" alt=""></a>
+                            <a href="https://www.facebook.com/douglaswissettwalker" target="_blank">Facebook</a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/douglaswissett" target="_blank"><img src="./img/twitter.png" alt=""></a>
+                            <a href="https://twitter.com/douglaswissett" target="_blank">Twitter</a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/douglaswissett/" target="_blank"><img src="./img/insta.png" alt=""></a>
+                            <a href="https://www.instagram.com/douglaswissett/" target="_blank">Instagram</a>
+                          </li>
+                          <li>
+                            <a href="tel:+491771433039"><img src="./img/phone.png" alt=""></a>
+                            <a href="tel:+491771433039">+491771433039</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.parallax.min.js"></script>
+</body>
+</html>
