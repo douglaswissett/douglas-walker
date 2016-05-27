@@ -23,13 +23,13 @@ img { width: 100%; }
 .container { margin-top: 80px; }
 .container.work {
   position: relative;
-  top: 60px;
+  top: 20px;
   height: 560px;
 }
 #work { 
   margin: 50px 0 40px;
   position: relative;
-  top: -113px;
+  top: -60px;
   left: -235px;
   color: black;
 }
@@ -118,6 +118,7 @@ section { padding: 40px 0 60px; }
   width: 100%;
   height: 400px;
   background: grey;
+  top: 70px;
 }
 .container.my-work.first-my-work {
   position: relative;
@@ -126,13 +127,14 @@ section { padding: 40px 0 60px; }
   height: 400px;
   padding: 55px 0;
   padding-left: 80px;
+  top: 70px;
 }
 .my-work-header {
-  position: relative;
-  top: -170px;
-  left: 270px;
+  position: fixed;
+  top: 70px;
+  left: 390px;
   font-size: 48px;
-  color: black;
+  font-weight: bold;
 }
 .slide-header {
   position: relative;
@@ -170,6 +172,7 @@ section { padding: 40px 0 60px; }
   text-align: center;
   position: relative;
 }
+.section-image img { width: 300px; }
 .skill-btn {
   position: relative;
   top: -90px;

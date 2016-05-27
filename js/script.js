@@ -13,8 +13,7 @@ $(document).ready(() => {
   $('#fullpage').fullpage({
     scrollBar: true,
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-    scrollingSpeed: 1000,
-    loopHorizontal: false,
+    scrollingSpeed: 700,
     responsiveWidth: 900,
 
     afterLoad: function(anchorLink, index){
@@ -73,7 +72,7 @@ $(document).ready(() => {
         $('.nav-arrow').addClass('flipInX')
         // animate.css
         $('.my-work-header').fadeIn();
-        $('.my-work-header').addClass('animated slideInLeft');
+        $('.my-work-header').addClass('animated slideInRight');
         setTimeout(()=>{
           $('.work-ul').fadeIn();
           $('.work-ul').addClass('animated slideInUp');
