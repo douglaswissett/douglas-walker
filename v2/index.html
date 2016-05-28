@@ -41,15 +41,18 @@
   <div class="section firstSection">
     <h1 id="head-1">Hello</h1>
     <div class="parallax-container top-para">
-      <div class="parallax"><img src="../img/scenerybackground.jpg"></div>
+      <div class="parallax zBelow">
+        <img src="./img/showcase.png">
+        <div class="overlay"></div>
+      </div>
     </div>
   </div>
-  <div class="section">
+<!--   <div class="section">
     <div class="vertical-line" style="top: 110px;"></div>
-    <h1 class="page-header about-header">About me</h1>
-  </div>
+  </div> -->
   <div class="section">
     <div class="vertical-line"></div>
+    <h1 class="page-header about-header">About me</h1>
     <div class="container">
       <div class="row">  
         <div class="about-text">
@@ -170,35 +173,6 @@
     <h1 class="page-header contact-header">Contact</h1>
     <div class="container contact-container">
       <div class="row">
-        <div class="availability">
-          <h4>Let me help you build your site</h4>
-          <h4>I’m currently: available for work</h4>
-        </div>
-        <div class="contact-text">
-          <p>If you have a project that you want to get started, think you need my help with something, then get in touch.</p>
-        </div>
-        <div class="contact-profile">
-          <img src="./img/profile.jpg" alt="">
-        </div>
-          <!-- Contact form -->
-        <form id="contactForm" action="mailto:douglas.wissett@gmail.com" method="GET">
-          <h4>Email me!</h4>
-          <div class="input-field col s8">
-            <i class="material-icons prefix">subject</i>
-            <input id="icon_prefix" type="text" name="subject" class="validate">
-            <label for="icon_prefix">Subject</label>
-          </div>
-          <div class="input-field col s8">
-            <i class="material-icons prefix">email</i>
-            <textarea id="textarea1" name="body" class="materialize-textarea"></textarea>
-            <label for="textarea1">Message</label>
-          </div>
-          <div class="input-field col s8">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-              <i class="material-icons right">send</i>
-            </button>
-          </div>
-        </form>
         <!-- Social links -->
         <div class="socials">
           <ul>
@@ -224,12 +198,26 @@
             </li>
           </ul>
         </div>
+          <!-- Contact form -->
+        <form id="contactForm" action="mailto:douglas.wissett@gmail.com" method="GET">
+          <h5>Get in touch</h5>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">subject</i>
+            <input id="icon_prefix" type="text" name="subject" class="validate">
+            <label for="icon_prefix">Subject</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <textarea id="textarea1" name="body" class="materialize-textarea"></textarea>
+            <label for="textarea1">Message</label>
+          </div>
+          <div class="input-field col s12">
+            <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
       </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="parallax-container footer-para">
-      <div class="parallax"><img src="../img/scenerybackground.jpg"></div>
     </div>
     <footer class="page-footer indigo darken-2">
       <div class="container">
