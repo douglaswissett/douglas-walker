@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  $(".button-collapse").sideNav();
   // init hide animate.css elements
   $('.about-col').hide();
   $('.about-col-header').hide();
@@ -146,11 +147,11 @@ $(document).ready(() => {
   });
   /* Headroom.js code */
   // grab an element
-  var myElement = document.querySelector("#header");
+  // var myElement = document.querySelector("#header");
   // construct an instance of Headroom, passing the element
-  var headroom  = new Headroom(myElement);
+  // var headroom  = new Headroom(myElement);
   // initialise
-  headroom.init();
+  // headroom.init();
   // Navigation anchor links slow scroll animate on page
   $('.aboutNav').click((e) => {
     e.preventDefault();
@@ -183,5 +184,5 @@ $(document).ready(() => {
     setInterval(function(){
       fadeInLastImg(index + 1)
     }, 3000);
-  })
+  });
 });
