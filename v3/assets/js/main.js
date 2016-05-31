@@ -29,7 +29,8 @@
 			$window.on('load', function() {
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
-				}, 3000);
+					$('.dark-overlay').fadeOut();
+				}, 300);
 			});
 
 		// Fix: Placeholder polyfill.
@@ -171,37 +172,7 @@
 
 		// loading page
 
-		// $('.dark-overlay').show();
-		// $('#header').hide();
-
-		// // lock scroll position, but retain settings for later
-		// var scrollPosition = [
-		//   self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
-		//   self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
-		// ];
-		// var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
-		// html.data('scroll-position', scrollPosition);
-		// html.data('previous-overflow', html.css('overflow'));
-		// html.css('overflow', 'hidden');
-		// window.scrollTo(scrollPosition[0], scrollPosition[1]);
-
-		// // slide loading page up
-
-		// setTimeout(function(){
-		// 	$('.loading').addClass('animated fadeOutUp');
-		// 	$('.dark-overlay').fadeOut();
-		// 	setTimeout(function(){
-		// 		$('.loading').hide();
-		// 		$('#header').fadeIn();
-		// 		$('#header').addClass('fadeInDown');
-		// 	},1000);
-		// 	// un-lock scroll position
-		// 	var html = jQuery('html');
-		// 	var scrollPosition = html.data('scroll-position');
-		// 	html.css('overflow', html.data('previous-overflow'));
-		// 	window.scrollTo(scrollPosition[0], scrollPosition[1]);
-		// },3000);
-
+		$('.dark-overlay').show();
 
 	// page load animate banner down
 
@@ -286,7 +257,6 @@
 
 	// Project page
 
-
 		// Back button
 		$('.p-back').click(function(event) { 
 			event.preventDefault();
@@ -300,7 +270,7 @@
 
 		  $('html, body').animate({
 		      scrollTop: $('#four').offset().top -100
-		  },1000);
+		  },300);
 		});
 
 	$('.link-1').click(function(event) {
@@ -323,5 +293,20 @@
 		$('.p-list').fadeOut();
 		$('.project-4').fadeIn();
 	});
+
+
+  // My work slideshow image cycles
+  function fadeInLastImg(index) {
+    var backImg = $('.ss'+index+' img:first');
+    backImg.hide();
+    backImg.remove();
+    $('.ss'+index ).append( backImg );
+    backImg.fadeIn({ duration: 1500 })
+  };
+  $('.my-work-img').each((index) => {
+    setInterval(function(){
+      fadeInLastImg(index + 1)
+    }, 3000);
+  });
 
 })(jQuery);

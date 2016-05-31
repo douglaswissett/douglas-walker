@@ -1621,22 +1621,15 @@
 		}
 
 	}
-
-	@keyframes breath {
-	  0%   { background-size: 110% auto; }
-	  25% { background-size: 125% auto; }
-	  50% { background-size: 140% auto; }
-	  75% { background-size: 125% auto; }
-	  100% { background-size: 110% auto; }
-	}
-
+	
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/homeoffice.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_1995.jpg");
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
-		animation: breath 60s linear infinite;
+		position: relative;
+		/*animation: breath 1s linear infinite alternate;*/
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -2894,14 +2887,14 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
     z-index: 999;
     display: none;
 	}
 
 	.loading {
 		text-align: center;
-		background: rgba(0,0,0,0.5);
+		background: rgba(0,0,0,0.3);
 	}
 	.loading img { 
     position: absolute;
@@ -2917,7 +2910,7 @@
 	}
 
 	.landing {
-		/*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/homeoffice.jpg");
+		/*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_1995.jpg");
 		background-size: auto, cover;
 		background-position: center, center;*/
 		background: url();
@@ -3076,6 +3069,56 @@
 			opacity: 1;
 		}
 
+/* Container box to set the sides relative to */
+.cube {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	height: 300px;
+
+	-webkit-transition: -webkit-transform .33s;
+	transition: transform .33s; /* Animate the transform properties */
+
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d; /* <-NB */
+}
+
+/* The two faces of the cube */
+.flippety,.flop {
+	background: rgb(247, 247, 247);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0 5px 20px rgba(105, 108, 109, .3), 0 0 8px 5px rgba(208, 223, 226, .4) inset;
+	box-shadow: 0 5px 20px rgba(105, 108, 109, .3), 0 0 8px 5px rgba(208, 223, 226, .4) inset;
+	height: 260px;
+}
+
+/* Position the faces */
+.flippety {
+	-webkit-transform: translateZ(130px);
+	transform: translateZ(130px);
+}
+.flippety img { 
+	height: 100%;
+	width: 100%;
+}
+.flop {
+	-webkit-transform: rotateX(-90deg) translateZ(-130px);
+	transform: rotateX(-90deg) translateZ(-130px);
+}
+.flop img { 
+	height: 100%;
+	width: 100%;
+}
+
+/* Rotate the cube */
+.cube:hover {
+	-webkit-transform: rotateX(89deg);
+	transform: rotateX(89deg); /* Text bleed at 90º */
+}
+
+
 /* Banner */
 
 	#banner {
@@ -3085,6 +3128,10 @@
 		#banner .inner {
 			margin: 0 auto;
 			width: 55em;
+		}
+
+		.logo img {
+			width: 75px;
 		}
 
 		#banner .logo {
@@ -3140,6 +3187,15 @@
 			padding-bottom: 0.4em;
 		}
 
+		@keyframes breath {
+			0% { left: 0; }
+			20% { left: 10%; }
+			40% { left: 20%; }
+			60% { left: 30%; }
+			80% { left: 40%; }
+			100% { left: 50%; }
+		}
+
 		#banner p {
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
@@ -3164,22 +3220,15 @@
 			letter-spacing: 0.1em;
 			line-height: 2;
 			text-transform: uppercase;
+			position: relative;
+			animation: breath 40s linear infinite alternate;
 		}
 
 		@media screen and (max-width: 1280px) {
 
-			@keyframes breath {
-			  0%   { background-size: 120% auto; }
-			  25% { background-size: 135% auto; }
-			  50% { background-size: 150% auto; }
-			  75% { background-size: 135% auto; }
-			  100% { background-size: 120% auto; }
-			}
-
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				/*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/homeoffice.jpg");*/
 				background: url();
 				background-size: auto, cover;
 				background-position: center, center;
@@ -3189,14 +3238,6 @@
 		}
 
 		@media screen and (max-width: 980px) {
-
-			@keyframes breath {
-			  0%   { background-size: 135% auto; }
-			  25% { background-size: 145% auto; }
-			  50% { background-size: 155% auto; }
-			  75% { background-size: 145% auto; }
-			  100% { background-size: 135% auto; }
-			}
 
 			#banner {
 				padding: 12em 3em 12.375em 3em ;
@@ -3210,14 +3251,6 @@
 		}
 
 		@media screen and (max-width: 736px) {
-
-			@keyframes breath {
-			  0%   { background-size: 180% auto; }
-			  25% { background-size: 190% auto; }
-			  50% { background-size: 200% auto; }
-			  75% { background-size: 190% auto; }
-			  100% { background-size: 180% auto; }
-			}
 
 			#banner {
 				padding: 5em 2em 4.25em 2em ;
@@ -3306,7 +3339,7 @@
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/homeoffice.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_1995.jpg");
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
@@ -3614,13 +3647,6 @@
 
 		@media screen and (max-width: 640px) {
 
-			@keyframes breath {
-			  0%   { background-size: 340% auto; }
-			  25% { background-size: 350% auto; }
-			  50% { background-size: 360% auto; }
-			  75% { background-size: 350% auto; }
-			  100% { background-size: 340% auto; }
-			}
 
 			.wrapper.spotlight .inner {
 				display: block;
@@ -3647,6 +3673,7 @@
 
 	.project-page {
 		display: none;		
+		height: 55.5em;
 	}
 
 
@@ -3717,7 +3744,7 @@
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/homeoffice.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_1995.jpg");
 			background-size: auto, cover;
 			background-position: center, center;
 			margin-top: -6.5em;
@@ -3774,9 +3801,20 @@
 					margin: 0 0 3em 0;
 				}
 
+		.project-page { height: 45em; }
+
 	}
 
 	@media screen and (max-width: 640px) {
+
+		@keyframes breath {
+			0% { left: 0; }
+			20% { left: 4%; }
+			40% { left: 8%; }
+			60% { left: 12%; }
+			80% { left: 16%; }
+			100% { left: 20%; }
+		}
 
 		#footer .inner .copyright li {
 			border-left: 0;
@@ -3788,7 +3826,8 @@
 			#footer .inner .copyright li:first-child {
 				margin-top: 0;
 			}
-
+	
+		.project-page { height: 40em; }
 	}
 
 	@media screen and (max-width: 360px) {
@@ -3796,5 +3835,12 @@
 		#footer .inner {
 			padding: 2em 1.5em 0.1em 1.5em ;
 		}
+	
+		.project-page { height: 32em; }
 
 	}
+
+.my-work-img img {
+  position: absolute;
+  left: 0;
+}
