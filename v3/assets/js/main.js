@@ -29,7 +29,7 @@
 			$window.on('load', function() {
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
-				}, 100);
+				}, 4000);
 			});
 
 		// Fix: Placeholder polyfill.
@@ -166,11 +166,45 @@
 	$('#fullpage').fullpage({
 		autoScrolling: false,
 		fitToSection: false,
+		scrollingSpeed: 1000,
 	});
+
+	// loading page
+
+		$('#header').hide();
+
+		// lock scroll position, but retain settings for later
+		var scrollPosition = [
+		  self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+		  self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
+		];
+		var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
+		html.data('scroll-position', scrollPosition);
+		html.data('previous-overflow', html.css('overflow'));
+		html.css('overflow', 'hidden');
+		window.scrollTo(scrollPosition[0], scrollPosition[1]);
+
+		// slide loading page up
+
+		setTimeout(function(){
+			$('.loading').addClass('animated fadeOutUp');
+			setTimeout(function(){
+				$('.loading').hide();
+				$('#header').fadeIn();
+				$('#header').addClass('fadeInDown');
+			},1000);
+			// un-lock scroll position
+			var html = jQuery('html');
+			var scrollPosition = html.data('scroll-position');
+			html.css('overflow', html.data('previous-overflow'));
+			window.scrollTo(scrollPosition[0], scrollPosition[1]);
+		},4000);
+
 
 	// page load animate banner down
 
 	$('#banner .inner').addClass('fadeInDown');
+
 
 	// scrollfire animate.css
 	$('#banner .inner').scrollfire({
@@ -244,7 +278,7 @@
 	});
 	$('#footer .inner').scrollfire({
 		onBottomIn: function(elm, distance_scrolled) {
-			$(elm).addClass('zoomIn'); 
+			$(elm).addClass('fadeIn'); 
 		}
 	});
 
