@@ -29,7 +29,7 @@
 			$window.on('load', function() {
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
-				}, 4000);
+				}, 3000);
 			});
 
 		// Fix: Placeholder polyfill.
@@ -162,43 +162,45 @@
 				});
 	});
 
-	// fullpage for hero image
-	$('#fullpage').fullpage({
-		autoScrolling: false,
-		fitToSection: false,
-		scrollingSpeed: 1000,
-	});
+		// fullpage for hero image
+		$('#fullpage').fullpage({
+			autoScrolling: false,
+			fitToSection: false,
+			scrollingSpeed: 1000,
+		});
 
-	// loading page
+		// loading page
 
-		$('#header').hide();
+		// $('.dark-overlay').show();
+		// $('#header').hide();
 
-		// lock scroll position, but retain settings for later
-		var scrollPosition = [
-		  self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
-		  self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
-		];
-		var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
-		html.data('scroll-position', scrollPosition);
-		html.data('previous-overflow', html.css('overflow'));
-		html.css('overflow', 'hidden');
-		window.scrollTo(scrollPosition[0], scrollPosition[1]);
+		// // lock scroll position, but retain settings for later
+		// var scrollPosition = [
+		//   self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+		//   self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
+		// ];
+		// var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
+		// html.data('scroll-position', scrollPosition);
+		// html.data('previous-overflow', html.css('overflow'));
+		// html.css('overflow', 'hidden');
+		// window.scrollTo(scrollPosition[0], scrollPosition[1]);
 
-		// slide loading page up
+		// // slide loading page up
 
-		setTimeout(function(){
-			$('.loading').addClass('animated fadeOutUp');
-			setTimeout(function(){
-				$('.loading').hide();
-				$('#header').fadeIn();
-				$('#header').addClass('fadeInDown');
-			},1000);
-			// un-lock scroll position
-			var html = jQuery('html');
-			var scrollPosition = html.data('scroll-position');
-			html.css('overflow', html.data('previous-overflow'));
-			window.scrollTo(scrollPosition[0], scrollPosition[1]);
-		},4000);
+		// setTimeout(function(){
+		// 	$('.loading').addClass('animated fadeOutUp');
+		// 	$('.dark-overlay').fadeOut();
+		// 	setTimeout(function(){
+		// 		$('.loading').hide();
+		// 		$('#header').fadeIn();
+		// 		$('#header').addClass('fadeInDown');
+		// 	},1000);
+		// 	// un-lock scroll position
+		// 	var html = jQuery('html');
+		// 	var scrollPosition = html.data('scroll-position');
+		// 	html.css('overflow', html.data('previous-overflow'));
+		// 	window.scrollTo(scrollPosition[0], scrollPosition[1]);
+		// },3000);
 
 
 	// page load animate banner down
@@ -280,6 +282,46 @@
 		onBottomIn: function(elm, distance_scrolled) {
 			$(elm).addClass('fadeIn'); 
 		}
+	});
+
+	// Project page
+
+
+		// Back button
+		$('.p-back').click(function(event) { 
+			event.preventDefault();
+
+			$('.project-page').fadeOut();
+			$('.p-list').fadeIn();
+		});
+
+		$('.p-link').click(function(event) {
+			event.preventDefault();
+
+		  $('html, body').animate({
+		      scrollTop: $('#four').offset().top -100
+		  },1000);
+		});
+
+	$('.link-1').click(function(event) {
+		event.preventDefault();
+		$('.p-list').fadeOut();
+		$('.project-1').fadeIn();
+	});
+	$('.link-2').click(function(event) {
+		event.preventDefault();
+		$('.p-list').fadeOut();
+		$('.project-2').fadeIn();
+	});
+	$('.link-3').click(function(event) {
+		event.preventDefault();
+		$('.p-list').fadeOut();
+		$('.project-3').fadeIn();
+	});
+	$('.link-4').click(function(event) {
+		event.preventDefault();
+		$('.p-list').fadeOut();
+		$('.project-4').fadeIn();
 	});
 
 })(jQuery);
