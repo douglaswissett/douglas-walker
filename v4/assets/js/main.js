@@ -29,8 +29,7 @@
 			$window.on('load', function() {
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
-					$('.dark-overlay').fadeOut();
-				}, 300);
+				}, 100);
 			});
 
 		// Fix: Placeholder polyfill.
@@ -161,6 +160,7 @@
 							$menu._hide();
 
 				});
+
 	});
 
 	// fullpage for hero image
@@ -175,7 +175,6 @@
 
 	// page load animate banner down
 	$('#banner .inner').addClass('fadeInDown');
-
 
 	// scrollfire animate.css
 	$('#banner .inner').scrollfire({
@@ -244,8 +243,8 @@
 	});
 	$('#four .inner').scrollfire({
 		onBottomIn: function(elm, distance_scrolled) {
-			$(elm).addClass('fadeInUp'); 
-		}
+			$(elm).addClass('fadeInLeft'); 
+		},
 	});
 	$('#footer .inner').scrollfire({
 		onBottomIn: function(elm, distance_scrolled) {
@@ -253,58 +252,8 @@
 		}
 	});
 
-	// Project page
-
-	// Back button
-	$('.p-back').click(function(event) { 
-		event.preventDefault();
-
-		$('.project-page').fadeOut();
-		$('.p-list').fadeIn();
-	});
-
-	$('.p-link').click(function(event) {
-		event.preventDefault();
-
-	  $('html, body').animate({
-	      scrollTop: $('#four').offset().top -100
-	  },300);
-	});
-
-	$('.link-1').click(function(event) {
-		event.preventDefault();
-		$('.p-list').fadeOut();
-		$('.project-1').fadeIn();
-	});
-	$('.link-2').click(function(event) {
-		event.preventDefault();
-		$('.p-list').fadeOut();
-		$('.project-2').fadeIn();
-	});
-	$('.link-3').click(function(event) {
-		event.preventDefault();
-		$('.p-list').fadeOut();
-		$('.project-3').fadeIn();
-	});
-	$('.link-4').click(function(event) {
-		event.preventDefault();
-		$('.p-list').fadeOut();
-		$('.project-4').fadeIn();
-	});
-
-
-  // My work slideshow image cycles
-  function fadeInLastImg(index) {
-    var backImg = $('.ss'+index+' img:first');
-    backImg.hide();
-    backImg.remove();
-    $('.ss'+index ).append( backImg );
-    backImg.fadeIn({ duration: 1500 })
-  };
-  $('.my-work-img').each((index) => {
-    setInterval(function(){
-      fadeInLastImg(index + 1)
-    }, 3000);
+  $('#emailed').click(function(event) {
+  	$('#footer h2').text('Thank you');
   });
 
 })(jQuery);
