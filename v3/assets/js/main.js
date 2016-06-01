@@ -163,16 +163,16 @@
 				});
 	});
 
-		// fullpage for hero image
-		$('#fullpage').fullpage({
-			autoScrolling: false,
-			fitToSection: false,
-			scrollingSpeed: 1000,
-		});
+	// fullpage for hero image
+	$('#fullpage').fullpage({
+		autoScrolling: false,
+		fitToSection: false,
+		scrollingSpeed: 1000,
+	});
 
-		// loading page
+	// loading page
 
-		$('.dark-overlay').show();
+	$('.dark-overlay').show();
 
 	// page load animate banner down
 
@@ -251,27 +251,27 @@
 	});
 	$('#footer .inner').scrollfire({
 		onBottomIn: function(elm, distance_scrolled) {
-			$(elm).addClass('fadeIn'); 
+			$(elm).addClass('zoomIn'); 
 		}
 	});
 
 	// Project page
 
-		// Back button
-		$('.p-back').click(function(event) { 
-			event.preventDefault();
+	// Back button
+	$('.p-back').click(function(event) { 
+		event.preventDefault();
 
-			$('.project-page').fadeOut();
-			$('.p-list').fadeIn();
-		});
+		$('.project-page').fadeOut();
+		$('.p-list').fadeIn();
+	});
 
-		$('.p-link').click(function(event) {
-			event.preventDefault();
+	$('.p-link').click(function(event) {
+		event.preventDefault();
 
-		  $('html, body').animate({
-		      scrollTop: $('#four').offset().top -100
-		  },300);
-		});
+	  $('html, body').animate({
+	      scrollTop: $('#four').offset().top -100
+	  },300);
+	});
 
 	$('.link-1').click(function(event) {
 		event.preventDefault();

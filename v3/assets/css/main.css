@@ -1624,7 +1624,7 @@
 	
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_1995.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_5256_sml.jpg");
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
@@ -2910,7 +2910,7 @@
 	}
 
 	.landing {
-		/*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_1995.jpg");
+		/*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_5256_sml.jpg");
 		background-size: auto, cover;
 		background-position: center, center;*/
 		background: url();
@@ -3163,6 +3163,15 @@
 				width: 2.25em;
 			}
 
+		@keyframes breath-h2 {
+			0% { padding-left: 0; }
+			20% { padding-left: 10%; }
+			40% { padding-left: 20%; }
+			60% { padding-left: 30%; }
+			80% { padding-left: 40%; }
+			100% { padding-left: 45%; }
+		}
+
 		#banner h2 {
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
@@ -3185,6 +3194,7 @@
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
+			animation: breath-h2 100s linear infinite alternate;
 		}
 
 		@keyframes breath {
@@ -3193,8 +3203,17 @@
 			40% { left: 20%; }
 			60% { left: 30%; }
 			80% { left: 40%; }
-			100% { left: 50%; }
+			100% { left: 45%; }
 		}
+		@keyframes breath-right {
+			0% { right: 0; }
+			20% { right: 10%; }
+			40% { right: 20%; }
+			60% { right: 30%; }
+			80% { right: 40%; }
+			100% { right: 50%; }
+		}
+
 
 		#banner p {
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
@@ -3220,9 +3239,18 @@
 			letter-spacing: 0.1em;
 			line-height: 2;
 			text-transform: uppercase;
+		}
+
+		.banner-p-1 {
 			position: relative;
 			animation: breath 40s linear infinite alternate;
 		}
+		.banner-p-2 {
+			position: relative;
+			float: right;
+			animation: breath-right 40s linear infinite alternate;
+		}
+
 
 		@media screen and (max-width: 1280px) {
 
@@ -3339,7 +3367,7 @@
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_1995.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_5256_sml.jpg");
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
@@ -3647,6 +3675,18 @@
 
 		@media screen and (max-width: 640px) {
 
+		@keyframes breath-h2 {
+			0% { padding-left: 0; }
+			20% { padding-left: 4%; }
+			40% { padding-left: 8%; }
+			60% { padding-left: 12%; }
+			80% { padding-left: 16%; }
+			100% { padding-left: 20%; }
+		}
+
+		#banner h2 {
+			animation: breath-h2 40s linear infinite alternate;
+		}
 
 			.wrapper.spotlight .inner {
 				display: block;
@@ -3744,7 +3784,7 @@
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_1995.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_5256_sml.jpg");
 			background-size: auto, cover;
 			background-position: center, center;
 			margin-top: -6.5em;
@@ -3806,15 +3846,6 @@
 	}
 
 	@media screen and (max-width: 640px) {
-
-		@keyframes breath {
-			0% { left: 0; }
-			20% { left: 4%; }
-			40% { left: 8%; }
-			60% { left: 12%; }
-			80% { left: 16%; }
-			100% { left: 20%; }
-		}
 
 		#footer .inner .copyright li {
 			border-left: 0;
