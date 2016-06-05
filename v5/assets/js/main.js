@@ -188,14 +188,14 @@
     },
 	});
 	$('#one .inner').scrollfire({
-    onTopOut: function( elm, distance_scrolled ) {
-			$(elm).removeClass('fadeInLeft');
-			$(elm).addClass('fadeOutLeft');
-    },
-    onTopIn: function( elm, distance_scrolled ) {
-			$(elm).removeClass('fadeOutLeft');
-			$(elm).addClass('fadeInLeft');
-    },
+   //  onTopOut: function( elm, distance_scrolled ) {
+			// $(elm).removeClass('fadeInLeft');
+			// $(elm).addClass('fadeOutLeft');
+   //  },
+   //  onTopIn: function( elm, distance_scrolled ) {
+			// $(elm).removeClass('fadeOutLeft');
+			// $(elm).addClass('fadeInLeft');
+   //  },
 		onBottomIn: function(elm, distance_scrolled) {
 			$(elm).removeClass('fadeOutLeft');
 			$(elm).addClass('fadeInLeft'); 
@@ -206,14 +206,14 @@
     },
 	});
 	$('#two .inner').scrollfire({
-    onTopOut: function( elm, distance_scrolled ) {
-			$(elm).removeClass('fadeInLeft');
-			$(elm).addClass('fadeOutLeft');
-    },
-    onTopIn: function( elm, distance_scrolled ) {
-			$(elm).removeClass('fadeOutLeft');
-			$(elm).addClass('fadeInLeft');
-    },
+   //  onTopOut: function( elm, distance_scrolled ) {
+			// $(elm).removeClass('fadeInLeft');
+			// $(elm).addClass('fadeOutLeft');
+   //  },
+   //  onTopIn: function( elm, distance_scrolled ) {
+			// $(elm).removeClass('fadeOutLeft');
+			// $(elm).addClass('fadeInLeft');
+   //  },
 		onBottomIn: function(elm, distance_scrolled) {
 			$(elm).removeClass('fadeOutLeft');
 			$(elm).addClass('fadeInLeft'); 
@@ -224,14 +224,14 @@
     },
 	});
 	$('#three .inner').scrollfire({
-    onTopOut: function( elm, distance_scrolled ) {
-			$(elm).removeClass('fadeInLeft');
-			$(elm).addClass('fadeOutLeft');
-    },
-    onTopIn: function( elm, distance_scrolled ) {
-			$(elm).removeClass('fadeOutLeft');
-			$(elm).addClass('fadeInLeft');
-    },
+   //  onTopOut: function( elm, distance_scrolled ) {
+			// $(elm).removeClass('fadeInLeft');
+			// $(elm).addClass('fadeOutLeft');
+   //  },
+   //  onTopIn: function( elm, distance_scrolled ) {
+			// $(elm).removeClass('fadeOutLeft');
+			// $(elm).addClass('fadeInLeft');
+   //  },
 		onBottomIn: function(elm, distance_scrolled) {
 			$(elm).removeClass('fadeOutLeft');
 			$(elm).addClass('fadeInLeft'); 
@@ -251,11 +251,11 @@
 			$(elm).addClass('zoomIn'); 
 		}
 	});
+
 	// swap footer header with "Thank you" on email clik
   $('#emailed').click(function(event) {
   	$('#footer h2').text('Thank you');
   });
-
 
 	// confetti canvas inits
   $('.confetti').each(function(i, elm) {
@@ -286,9 +286,7 @@
 		function draw()
 		{
 			ctx.clearRect(0, 0, W, H);
-			
-			
-			
+
 			for(var i = 0; i < mp; i++)
 			{ 
 				var p = particles[i];
@@ -297,11 +295,9 @@
 				ctx.moveTo(p.x, p.y);
 				ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
 	            ctx.fill();
-			}
-			
+			}			
 			update();
 		}
-		
 		//Function to move the snowflakes
 		//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
 		var angle = 0;
@@ -317,14 +313,14 @@
 				//Lets make it more random by adding in the radius
 				p.y += Math.cos(angle+p.d) + 1 + p.r/2;
 				p.x += Math.sin(angle) * 2;
-				
+
 				//Sending flakes back from the top when it exits
 				//Lets make it a bit more organic and let flakes enter from the left and right also.
 				if(p.x > W+5 || p.x < -5 || p.y > H)
 				{
 					if(i%3 > 0) //66.67% of the flakes
 					{
-	                    particles[i] = {x: Math.random()*W, y: -10, r: p.r, d: p.d, color : p.color};
+            particles[i] = {x: Math.random()*W, y: -10, r: p.r, d: p.d, color : p.color};
 					}
 					else
 					{
@@ -332,18 +328,17 @@
 						if(Math.sin(angle) > 0)
 						{
 							//Enter from the left
-	                        particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d, color: p.color};
+              particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d, color: p.color};
 						}
 						else
 						{
 							//Enter from the right
-	                        particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d, color : p.color};
+              particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d, color : p.color};
 						}
 					}
 				}
 			}
 		}
-		
 		//animation loop
 		setInterval(draw, 33);
   })
