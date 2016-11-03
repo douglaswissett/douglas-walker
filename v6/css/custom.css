@@ -1,0 +1,92 @@
+.logo {
+  font-size: 48px;
+  position: relative;
+  top: -15px;
+}
+
+.logo-light {
+  color: white;
+}
+
+.logo-dark {
+  color: black;
+}
+
+.header-icon {
+   font-size: 60px;
+}
+
+.highlights {
+  padding-top: 300px;
+}
+
+.experience {
+  padding-top: 300px;
+}
+
+.skill-capacity {
+  width: 0;
+}
+
+.device {
+  position: relative;
+  top: 515px;
+  width: 300px;
+  left: 41%;
+}
+
+/* The animation code */
+@keyframes example92 {
+    from {width: 0%;}
+    to {width: 91%;}
+}
+@keyframes example75 {
+    from {width: 0%;}
+    to {width: 75%;}
+}
+@keyframes example59 {
+    from {width: 0%;}
+    to {width: 59%;}
+}
+@keyframes example50 {
+    from {width: 0%;}
+    to {width: 50%;}
+}
+
+.animate_92 {
+    animation-name: example92;
+    animation-duration: 4s;
+}
+.animate_75 {
+    animation-name: example75;
+    animation-duration: 4s;
+}
+.animate_59 {
+    animation-name: example59;
+    animation-duration: 4s;
+}
+.animate_50 {
+    animation-name: example50;
+    animation-duration: 4s;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-col {
+    margin-bottom: 60px;
+  }
+  .header-icon {
+    font-size: 42px;
+  }
+  .header-h2 {
+    font-size: 20px;
+  }
+  .device {
+    left: 64%;
+  }
+}
