@@ -36,6 +36,10 @@
 }
 
 /* The animation code */
+@keyframes example {
+    from {width: 0%;}
+    to {width: 100%;}
+}
 @keyframes example92 {
     from {width: 0%;}
     to {width: 91%;}
@@ -51,6 +55,11 @@
 @keyframes example50 {
     from {width: 0%;}
     to {width: 50%;}
+}
+
+.animate_100 {
+    animation-name: example;
+    animation-duration: 4s;
 }
 
 .animate_92 {

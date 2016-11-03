@@ -26,6 +26,19 @@ $(document).ready(function(){
       $(elm).css('padding-top', 0);
     }
   });
+
+  $('.skill').scrollfire({
+    // Offsets
+    offset: 0,
+    topOffset: 50,
+    bottomOffset: 50,
+
+    // Fires once when element begins to come in from the bottom
+    onBottomIn: function( elm, distance_scrolled ) {
+      $(elm).addClass('animate_100');
+      $(elm).css('width', '100%');
+    }
+  });
   
   $('.skill92').scrollfire({
     // Offsets
