@@ -1,2 +1,0 @@
-# douglas-walker
-
