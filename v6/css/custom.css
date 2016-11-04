@@ -30,9 +30,43 @@
 
 .device {
   position: relative;
-  top: 515px;
-  width: 300px;
-  left: 41%;
+}
+
+.mac {
+  top: 500px;
+  width: 768px;
+  left: 27%;
+}
+
+.iphone {
+  left: 20%;
+  width: 210px;
+  top: 500px;
+}
+
+ul .left-align {
+  text-align: left;
+  padding-left: 24%;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.header-name {
+  position: relative;
+  top: -155px;
+  font-size: 58px;
+}
+
+.header-title {
+  position: relative;
+  top: -100px;
+}
+
+.header-skills {
+  position: relative; 
+  top: -68px;
 }
 
 /* The animation code */
@@ -79,6 +113,20 @@
     animation-duration: 4s;
 }
 
+
+/*
+  Device breakpoints
+*/
+
+@media screen and (max-width: 1280px) {
+  .mac {
+    left: 21%;
+  }
+  .iphone {
+    left: 6%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -96,6 +144,51 @@
     font-size: 20px;
   }
   .device {
-    left: 64%;
+    left: 77%;
+  }
+  .iphone {
+    width: 300px;
+    top: 400px;
+  }
+  .mac {
+    display: none;
+    width: 0;
+  }
+  .header-name {
+    top: -80px;
+  }
+  .header-title {
+    top: -5px;
+  }
+  .header-skills {
+    top: 70px;
+  }
+  ul .left-align {
+    text-align: center;
+    padding-left: 0;
+  }
+  .icon-move-left {
+    position: relative;
+    left: -18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .device {
+    left: 81%;
+  }
+  .icon-move-left {
+    position: relative;
+    left: 11px;
+  } 
+}
+
+@media screen and (max-width: 320px) {
+  .device {
+    left: 84%;
+  }
+  .icon-move-left {
+    position: relative;
+    left: -1px;
   }
 }
