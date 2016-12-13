@@ -33,15 +33,15 @@
 }
 
 .mac {
-  top: 500px;
+  top: 525px;
   width: 768px;
   left: 27%;
 }
 
 .iphone {
-  left: 20%;
+  left: 17%;
   width: 210px;
-  top: 500px;
+  top: 560px;
 }
 
 ul .left-align {
@@ -51,6 +51,11 @@ ul .left-align {
 
 .center-align {
   text-align: center;
+}
+
+.resume-header {
+  padding-top: 340px;
+  padding-bottom: 240px;
 }
 
 .header-name {
