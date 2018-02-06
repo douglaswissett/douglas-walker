@@ -155,6 +155,8 @@ ul .left-align {
   transform: translateY(-50%);
 }
 
+.line-2 {padding-right: 0;}
+
 /* Animation */
 .anim-typewriter{
   animation: typewriter 1s steps(20) 1 normal both,
@@ -199,7 +201,6 @@ ul .left-align {
   .header-col {margin-bottom: 60px;}
   .header-icon {font-size: 42px;}
   .header-h2 {font-size: 20px;}
-/*  .device {left: 77%;}*/
   .iphone {
     width: 300px;
     top: 400px;
