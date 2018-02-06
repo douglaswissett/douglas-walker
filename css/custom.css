@@ -160,7 +160,7 @@ ul .left-align {
 /* Animation */
 .anim-typewriter{
   animation: typewriter 1s steps(20) 1 normal both,
-             blinkTextCursor 500ms steps(44) 4 normal;
+             blinkTextCursor 500ms steps(44) 3 normal;
 }
 .anim-typewriter2{
   animation: typewriter 1.5s steps(30) 1.5s 1 normal both,
