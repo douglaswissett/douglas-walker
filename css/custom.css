@@ -1,3 +1,9 @@
+.nav-menu {
+  position: relative;
+  top: 20px;
+  opacity: 0;
+}
+
 .logo {
   font-size: 48px;
   position: relative;
@@ -20,6 +26,12 @@
   padding-top: 300px;
 }
 
+.team-1-member {
+  position: relative;
+  top: 60px;
+  opacity: 0;
+}
+
 .experience {
   padding-top: 300px;
 }
@@ -30,10 +42,10 @@
 
 .device {
   position: relative;
+  top: 535px !important;
 }
 
 .mac {
-  top: 620px;
   width: 768px;
   left: 27%;
 }
@@ -41,7 +53,6 @@
 .iphone {
   left: 17%;
   width: 210px;
-  top: 660px;
 }
 
 ul .left-align {
@@ -60,7 +71,6 @@ ul .left-align {
 
 .header-name {
   position: relative;
-  top: -155px;
   font-size: 58px;
 }
 
@@ -71,7 +81,13 @@ ul .left-align {
 
 .header-skills {
   position: relative; 
-  top: -68px;
+  top: 50px;
+}
+
+.header-col {
+  position: relative;
+  top: 50px;
+  opacity: 0;
 }
 
 /* The animation code */
@@ -118,82 +134,116 @@ ul .left-align {
     animation-duration: 4s;
 }
 
+/*
+  Typewriter Animation
+*/
+
+.blocker {
+  display: inline-block;
+  opacity: 0;
+}
+
+.line-1 {
+  position: relative;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,0);
+  text-align: center;
+  font-size: 100% !important;
+  padding: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 1s steps(20) 1 normal both,
+             blinkTextCursor 500ms steps(44) 4 normal;
+}
+.anim-typewriter2{
+  animation: typewriter 1.5s steps(30) 1.5s 1 normal both,
+             blinkTextCursor 500ms steps(44) 1.5s infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
 
 /*
   Device breakpoints
 */
 
+@media screen and (max-width: 1440px) {
+  .header-skills {top: 0;}
+  .line-1 {top: -30px;}
+}
+
 @media screen and (max-width: 1280px) {
-  .mac {
-    left: 21%;
-  }
-  .iphone {
-    left: 6%;
-  }
+  .mac {left: 21%;}
+  .iphone {left: 6%;}
+  .header-skills {top: -55px;}
+  .line-1 {top: -75px;}
 }
 
 @media screen and (max-width: 768px) {
-  .nav-menu {
-    display: none;
-  }
+  .nav-menu {display: none;}
 }
 
 @media screen and (max-width: 480px) {
-  .header-col {
-    margin-bottom: 60px;
-  }
-  .header-icon {
-    font-size: 42px;
-  }
-  .header-h2 {
-    font-size: 20px;
-  }
-  .device {
-    left: 77%;
-  }
+  .header-col {margin-bottom: 60px;}
+  .header-icon {font-size: 42px;}
+  .header-h2 {font-size: 20px;}
+/*  .device {left: 77%;}*/
   .iphone {
     width: 300px;
     top: 400px;
+    left: 15%;
   }
   .mac {
     display: none;
     width: 0;
   }
-  .header-name {
-    top: -80px;
-  }
-  .header-title {
-    top: -5px;
-  }
-  .header-skills {
-    top: 70px;
-  }
+  .header-title {top: -5px;}
   ul .left-align {
     text-align: center;
     padding-left: 0;
   }
+  .text-content {text-align: left;}
   .icon-move-left {
     position: relative;
-    left: -18px;
+    left: 10px;
   }
+  .line-1 {top: -60px;}
+  .line-2 {font-size: 75% !important;}
 }
 
 @media screen and (max-width: 375px) {
-  .device {
-    left: 81%;
-  }
+  .iphone {left: 10%;}
   .icon-move-left {
     position: relative;
     left: 11px;
   } 
+  .line-1 {font-size:  90% !important;}
+  .line-2 {font-size: 75% !important;}
 }
 
 @media screen and (max-width: 320px) {
-  .device {
-    left: 84%;
+  .iphone {
+    left: 3%;
   }
   .icon-move-left {
     position: relative;
-    left: -1px;
+    left: -10px;
   }
+  .line-1 {
+    font-size: 70% !important;
+    top: -80px;
+  }
+  .line-2 {font-size: 65% !important;}
 }

@@ -1,6 +1,29 @@
 $(document).ready(function(){
 	"use strict";
 
+    var x = document.getElementById("demo");
+    // Code for Chrome, Safari and Opera
+    x.addEventListener("webkitAnimationEnd", myEndFunction);
+    // Standard syntax
+    x.addEventListener("animationend", myEndFunction);
+    function myEndFunction() {
+      setTimeout(() => headerColFadeUp(1),333);
+      function headerColFadeUp(n) {
+        $(`.header-col:nth-child(${n})`).animate({
+          opacity: 1,
+          top: 0
+        }, 333, function() {
+          // Animation complete.
+          if (n === 3) {
+            $('.nav-menu').animate({opacity: 1, top: 0}, 333);
+            $('.device').show();
+            $('.device').addClass('fadeInRight');
+          }
+          headerColFadeUp(n + 1);
+        });
+      }
+    }
+
   $('.highlights').scrollfire({
     // Offsets
     offset: 0,
@@ -24,6 +47,21 @@ $(document).ready(function(){
     onBottomIn: function( elm, distance_scrolled ) {
       $(elm).addClass('fadeInUp');
       $(elm).css('padding-top', 0);
+    }
+  });
+
+  $('.team-1-member').scrollfire({
+    // Offsets
+    offset: 0,
+    topOffset: 50,
+    bottomOffset: 50,
+
+    // Fires once when element begins to come in from the bottom
+    onBottomIn: function( elm, distance_scrolled ) {
+      $(elm).animate({
+        opacity: 1,
+        top: 0
+      }, 400);
     }
   });
 
@@ -544,18 +582,18 @@ $(window).load(function(){
 		
 	}
 	
-    if($('#tweets').length){
-    	$('#tweets').flexslider({ directionNav: false, controlNav: false });
-    }
-    
-    // Remove Loader
-    
-    $('.loader').css('opacity', 0);
-    setTimeout(function(){
-      $('.loader').hide();
-      $('.device').show();
-      $('.device').addClass('fadeInRight');
-    }, 600);
+  if($('#tweets').length){
+  	$('#tweets').flexslider({ directionNav: false, controlNav: false });
+  }
+  
+  // Remove Loader
+  $('.loader').css('opacity', 0);
+  setTimeout(function(){
+    $('.loader').hide();
+    $('.blocker').css('opacity', 1);
+    $('.line-1:first-child').addClass('anim-typewriter');
+    $('.line-2').addClass('anim-typewriter2');
+  }, 600);
     
 	// Mailchimp/Campaign Monitor Mail List Form Scripts
 	$('form.mail-list-signup').on('submit', function(){
