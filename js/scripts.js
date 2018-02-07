@@ -16,6 +16,7 @@ $(document).ready(function(){
           // Animation complete.
           if (n === 3) {
             $('.nav-menu').animate({opacity: 1, top: 0}, 333);
+            $('.mobile-toggle ul').animate({opacity: 1, top: 0}, 333);
             $('.device').show();
             $('.device').addClass('fadeInRight');
           }

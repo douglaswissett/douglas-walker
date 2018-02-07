@@ -55,6 +55,36 @@
   width: 210px;
 }
 
+
+/*
+  Project Work Image Sizing
+*/
+
+.netsuite {
+  background-size: 75% !important;
+  background-repeat: no-repeat !important;
+}
+.kompas-platform {
+  background-size: 70% !important;
+  background-repeat: no-repeat !important;
+}
+.general-assembly {
+  background-size: 50% !important;
+  background-repeat: no-repeat !important;
+}
+.kompas-mockup {
+  background-size: 90% !important;
+  background-repeat: no-repeat !important;
+}
+.grover {
+  background-size: 55% !important;
+  background-repeat: no-repeat !important;
+}
+.ourxstory {
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+}
+
 ul .left-align {
   text-align: left;
   padding-left: 24%;
@@ -222,6 +252,20 @@ ul .left-align {
   }
   .line-1 {top: -60px;}
   .line-2 {font-size: 75% !important;}
+  .top-bar {background: none;}
+  .nav-container .top-bar .container {height: 100px;}
+  .mobile-toggle ul {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .mobile-icon {
+    color: #fff;
+    font-size: 18px;
+    padding: 16px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -237,13 +281,14 @@ ul .left-align {
 @media screen and (max-width: 320px) {
   .iphone {
     left: 3%;
+    top: 50% !important;
   }
   .icon-move-left {
     position: relative;
     left: -10px;
   }
   .line-1 {
-    font-size: 70% !important;
+    font-size: 80% !important;
     top: -80px;
   }
   .line-2 {font-size: 65% !important;}
