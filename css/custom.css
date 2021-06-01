@@ -19,7 +19,7 @@
 }
 
 .header-icon {
-   font-size: 60px;
+  font-size: 60px;
 }
 
 .highlights {
@@ -55,13 +55,12 @@
   width: 210px;
 }
 
-
 /*
   Project Work Image Sizing
 */
 
-.netsuite {
-  background-size: 75% !important;
+.gfk {
+  background-size: 55% !important;
   background-repeat: no-repeat !important;
 }
 .kompas-platform {
@@ -76,12 +75,12 @@
   background-size: 90% !important;
   background-repeat: no-repeat !important;
 }
-.grover {
+.withreason {
   background-size: 55% !important;
   background-repeat: no-repeat !important;
 }
-.ourxstory {
-  background-size: 100% !important;
+.kaizen-reporting {
+  background-size: 65% !important;
   background-repeat: no-repeat !important;
 }
 
@@ -110,7 +109,7 @@ ul .left-align {
 }
 
 .header-skills {
-  position: relative; 
+  position: relative;
   top: 50px;
 }
 
@@ -122,46 +121,66 @@ ul .left-align {
 
 /* The animation code */
 @keyframes example {
-    from {width: 0%;}
-    to {width: 100%;}
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 @keyframes example92 {
-    from {width: 0%;}
-    to {width: 91%;}
+  from {
+    width: 0%;
+  }
+  to {
+    width: 91%;
+  }
 }
 @keyframes example75 {
-    from {width: 0%;}
-    to {width: 75%;}
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
 }
 @keyframes example59 {
-    from {width: 0%;}
-    to {width: 59%;}
+  from {
+    width: 0%;
+  }
+  to {
+    width: 59%;
+  }
 }
 @keyframes example50 {
-    from {width: 0%;}
-    to {width: 50%;}
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
 }
 
 .animate_100 {
-    animation-name: example;
-    animation-duration: 4s;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
 .animate_92 {
-    animation-name: example92;
-    animation-duration: 4s;
+  animation-name: example92;
+  animation-duration: 4s;
 }
 .animate_75 {
-    animation-name: example75;
-    animation-duration: 4s;
+  animation-name: example75;
+  animation-duration: 4s;
 }
 .animate_59 {
-    animation-name: example59;
-    animation-duration: 4s;
+  animation-name: example59;
+  animation-duration: 4s;
 }
 .animate_50 {
-    animation-name: example50;
-    animation-duration: 4s;
+  animation-name: example50;
+  animation-duration: 4s;
 }
 
 /*
@@ -176,7 +195,7 @@ ul .left-align {
 .line-1 {
   position: relative;
   margin: 0 auto;
-  border-right: 2px solid rgba(255,255,255,0);
+  border-right: 2px solid rgba(255, 255, 255, 0);
   text-align: center;
   font-size: 100% !important;
   padding: 2px;
@@ -185,52 +204,80 @@ ul .left-align {
   transform: translateY(-50%);
 }
 
-.line-2 {padding-right: 0;}
+.line-2 {
+  padding-right: 0;
+}
 
 /* Animation */
-.anim-typewriter{
+.anim-typewriter {
   animation: typewriter 1s steps(20) 1 normal both,
-             blinkTextCursor 500ms steps(44) 3 normal;
+    blinkTextCursor 500ms steps(44) 3 normal;
 }
-.anim-typewriter2{
+.anim-typewriter2 {
   animation: typewriter 1.5s steps(30) 1.5s 1 normal both,
-             blinkTextCursor 500ms steps(44) 1.5s infinite normal;
+    blinkTextCursor 500ms steps(44) 1.5s infinite normal;
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 100%;}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
-
-
 
 /*
   Device breakpoints
 */
 
 @media screen and (max-width: 1440px) {
-  .header-skills {top: 0;}
-  .line-1 {top: -30px;}
+  .header-skills {
+    top: 0;
+  }
+  .line-1 {
+    top: -30px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
-  .mac {left: 21%;}
-  .iphone {left: 6%;}
-  .header-skills {top: -55px;}
-  .line-1 {top: -75px;}
+  .mac {
+    left: 21%;
+  }
+  .iphone {
+    left: 6%;
+  }
+  .header-skills {
+    top: -55px;
+  }
+  .line-1 {
+    top: -75px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .nav-menu {display: none;}
+  .nav-menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .header-col {margin-bottom: 60px;}
-  .header-icon {font-size: 42px;}
-  .header-h2 {font-size: 20px;}
+  .header-col {
+    margin-bottom: 60px;
+  }
+  .header-icon {
+    font-size: 42px;
+  }
+  .header-h2 {
+    font-size: 20px;
+  }
   .iphone {
     width: 300px;
     top: 400px;
@@ -240,20 +287,32 @@ ul .left-align {
     display: none;
     width: 0;
   }
-  .header-title {top: -5px;}
+  .header-title {
+    top: -5px;
+  }
   ul .left-align {
     text-align: center;
     padding-left: 0;
   }
-  .text-content {text-align: left;}
+  .text-content {
+    text-align: left;
+  }
   .icon-move-left {
     position: relative;
     left: 10px;
   }
-  .line-1 {top: -60px;}
-  .line-2 {font-size: 75% !important;}
-  .top-bar {background: none;}
-  .nav-container .top-bar .container {height: 100px;}
+  .line-1 {
+    top: -60px;
+  }
+  .line-2 {
+    font-size: 75% !important;
+  }
+  .top-bar {
+    background: none;
+  }
+  .nav-container .top-bar .container {
+    height: 100px;
+  }
   .mobile-toggle ul {
     position: relative;
     top: 20px;
@@ -269,13 +328,19 @@ ul .left-align {
 }
 
 @media screen and (max-width: 375px) {
-  .iphone {left: 10%;}
+  .iphone {
+    left: 10%;
+  }
   .icon-move-left {
     position: relative;
     left: 11px;
-  } 
-  .line-1 {font-size:  90% !important;}
-  .line-2 {font-size: 75% !important;}
+  }
+  .line-1 {
+    font-size: 90% !important;
+  }
+  .line-2 {
+    font-size: 75% !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -291,5 +356,7 @@ ul .left-align {
     font-size: 80% !important;
     top: -80px;
   }
-  .line-2 {font-size: 65% !important;}
+  .line-2 {
+    font-size: 65% !important;
+  }
 }
